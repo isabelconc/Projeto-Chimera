@@ -10,9 +10,11 @@ Chimera é um jogo de cartas educativo criado na Godot, em que o jogador enfrent
 
 - Estrutura do Jogo
 
-TitleScreen contendo créditos
-Tutorial simples com a mecânica principal do jogo
-4 Níveis (1 para cada Naipe) -> Introdução simples ao conteúdo matemático da fase
+    TitleScreen contendo créditos
+  
+    Tutorial simples com a mecânica principal do jogo
+  
+    4 Níveis (1 para cada Naipe) -> Introdução simples ao conteúdo matemático da fase
 
 
 - Mecânica de Combate
