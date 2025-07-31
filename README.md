@@ -51,5 +51,5 @@ Fase de Geometria (♣):
 
 - Metodologias
 
-    Godot Engine (versão 4.0)
+    Godot Engine *VERSÃO 4.4*
 
