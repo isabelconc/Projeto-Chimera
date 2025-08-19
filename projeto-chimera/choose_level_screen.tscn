@@ -16,87 +16,6 @@ offset_right = 1153.0
 offset_bottom = 645.0
 color = Color(0.555837, 0.523579, 0.540252, 1)
 
-[node name="Label" type="Label" parent="."]
-offset_left = 5.0
-offset_top = -3.0
-offset_right = 1152.0
-offset_bottom = 642.0
-text = "SELEÇÃO DE NÍVEIS"
-horizontal_alignment = 1
-
-[node name="Label2" type="Label" parent="."]
-offset_left = 169.0
-offset_top = 191.0
-offset_right = 270.0
-offset_bottom = 262.0
-text = "NÍVEL 1
-FUNÇÕES"
-horizontal_alignment = 1
-
-[node name="Label3" type="Label" parent="."]
-offset_left = 421.0
-offset_top = 183.0
-offset_right = 522.0
-offset_bottom = 254.0
-text = "NÍVEL 2
-GEOMETRIA"
-horizontal_alignment = 1
-
-[node name="Label4" type="Label" parent="."]
-offset_left = 646.0
-offset_top = 187.0
-offset_right = 747.0
-offset_bottom = 258.0
-text = "NÍVEL 3
-ESTATÍSTICA"
-horizontal_alignment = 1
-
-[node name="Label5" type="Label" parent="."]
-offset_left = 861.0
-offset_top = 182.0
-offset_right = 968.0
-offset_bottom = 236.0
-text = "NÍVEL 4
-ARITMÉTICA"
-horizontal_alignment = 1
-
-[node name="Button" type="Button" parent="."]
-unique_name_in_owner = true
-offset_left = 139.0
-offset_top = 264.0
-offset_right = 330.0
-offset_bottom = 518.0
-text = "NÍVEL 1
-FUNÇÕES"
-metadata/_edit_use_anchors_ = true
-
-[node name="Button2" type="Button" parent="."]
-unique_name_in_owner = true
-offset_left = 367.0
-offset_top = 255.0
-offset_right = 582.0
-offset_bottom = 532.0
-text = "NÍVEL 2
-GEOMETRIA"
-
-[node name="Button3" type="Button" parent="."]
-unique_name_in_owner = true
-offset_left = 599.0
-offset_top = 254.0
-offset_right = 804.0
-offset_bottom = 530.0
-text = "NÍVEL 3
-ESTATÍSTICA"
-
-[node name="Button4" type="Button" parent="."]
-unique_name_in_owner = true
-offset_left = 818.0
-offset_top = 254.0
-offset_right = 1030.0
-offset_bottom = 526.0
-text = "NÍVEL 4
-ARITMÉTICA"
-
 [node name="lvl1_unlocked" type="ColorRect" parent="."]
 offset_left = 144.0
 offset_top = 268.0
@@ -186,30 +105,117 @@ offset_bottom = 593.0
 texture = ExtResource("5_mf7rd")
 expand_mode = 1
 
-[node name="Cadeado" type="Sprite2D" parent="."]
-position = Vector2(468, 458)
-scale = Vector2(0.152344, 0.152344)
-texture = ExtResource("6_7tskr")
+[node name="labels" type="Node" parent="."]
 
-[node name="Cadeado2" type="Sprite2D" parent="."]
-position = Vector2(702, 454)
-scale = Vector2(0.152344, 0.152344)
-texture = ExtResource("6_7tskr")
+[node name="Label3" type="Label" parent="labels"]
+offset_left = 421.0
+offset_top = 183.0
+offset_right = 522.0
+offset_bottom = 254.0
+text = "NÍVEL 2
+GEOMETRIA"
+horizontal_alignment = 1
 
-[node name="Cadeado3" type="Sprite2D" parent="."]
-position = Vector2(917, 449)
-scale = Vector2(0.152344, 0.152344)
-texture = ExtResource("6_7tskr")
+[node name="Label2" type="Label" parent="labels"]
+offset_left = 169.0
+offset_top = 191.0
+offset_right = 270.0
+offset_bottom = 262.0
+text = "NÍVEL 1
+FUNÇÕES"
+horizontal_alignment = 1
 
-[node name="voltar_btn" type="Button" parent="."]
+[node name="Label" type="Label" parent="labels"]
+offset_left = 5.0
+offset_top = -3.0
+offset_right = 1152.0
+offset_bottom = 642.0
+text = "SELEÇÃO DE NÍVEIS"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="labels"]
+offset_left = 646.0
+offset_top = 187.0
+offset_right = 747.0
+offset_bottom = 258.0
+text = "NÍVEL 3
+ESTATÍSTICA"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="labels"]
+offset_left = 861.0
+offset_top = 182.0
+offset_right = 968.0
+offset_bottom = 236.0
+text = "NÍVEL 4
+ARITMÉTICA"
+horizontal_alignment = 1
+
+[node name="buttons" type="Node" parent="."]
+
+[node name="Button" type="Button" parent="buttons"]
+unique_name_in_owner = true
+offset_left = 139.0
+offset_top = 264.0
+offset_right = 330.0
+offset_bottom = 518.0
+text = "NÍVEL 1
+FUNÇÕES"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="buttons"]
+unique_name_in_owner = true
+offset_left = 367.0
+offset_top = 255.0
+offset_right = 582.0
+offset_bottom = 532.0
+text = "NÍVEL 2
+GEOMETRIA"
+
+[node name="Button3" type="Button" parent="buttons"]
+unique_name_in_owner = true
+offset_left = 599.0
+offset_top = 254.0
+offset_right = 804.0
+offset_bottom = 530.0
+text = "NÍVEL 3
+ESTATÍSTICA"
+
+[node name="Button4" type="Button" parent="buttons"]
+unique_name_in_owner = true
+offset_left = 818.0
+offset_top = 254.0
+offset_right = 1030.0
+offset_bottom = 526.0
+text = "NÍVEL 4
+ARITMÉTICA"
+
+[node name="voltar_btn" type="Button" parent="buttons"]
 offset_left = 11.0
 offset_top = 11.0
 offset_right = 136.0
 offset_bottom = 67.0
 text = "VOLTAR"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
-[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
-[connection signal="pressed" from="voltar_btn" to="." method="_on_voltar_btn_pressed"]
+[node name="cadeados" type="Node" parent="."]
+
+[node name="Cadeado3" type="Sprite2D" parent="cadeados"]
+position = Vector2(917, 449)
+scale = Vector2(0.152344, 0.152344)
+texture = ExtResource("6_7tskr")
+
+[node name="Cadeado" type="Sprite2D" parent="cadeados"]
+position = Vector2(468, 458)
+scale = Vector2(0.152344, 0.152344)
+texture = ExtResource("6_7tskr")
+
+[node name="Cadeado2" type="Sprite2D" parent="cadeados"]
+position = Vector2(702, 454)
+scale = Vector2(0.152344, 0.152344)
+texture = ExtResource("6_7tskr")
+
+[connection signal="pressed" from="buttons/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="buttons/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="buttons/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="buttons/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="buttons/voltar_btn" to="." method="_on_voltar_btn_pressed"]

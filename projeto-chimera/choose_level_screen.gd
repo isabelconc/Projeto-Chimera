@@ -4,14 +4,14 @@ extends Node2D
 @onready var button_2: Button = %Button2
 @onready var button_3: Button = %Button3
 @onready var button_4: Button = %Button4
-@onready var voltar_btn: Button = $voltar
+@onready var voltar_btn: Button = $buttons/voltar_btn
 @onready var lvl_1_locked: ColorRect = $lvl1_locked
 @onready var lvl_2_locked: ColorRect = $lvl2_locked
 @onready var lvl_3_locked: ColorRect = $lvl3_locked
 @onready var lvl_4_locked: ColorRect = $lvl4_locked
-@onready var cadeado: Sprite2D = $Cadeado
-@onready var cadeado_2: Sprite2D = $Cadeado2
-@onready var cadeado_3: Sprite2D = $Cadeado3
+@onready var cadeado: Sprite2D = $cadeados/Cadeado
+@onready var cadeado_2: Sprite2D = $cadeados/Cadeado2
+@onready var cadeado_3: Sprite2D = $cadeados/Cadeado3
 
 func _on_voltar_btn_pressed() -> void:
 	get_tree().change_scene_to_file("res://title_screen.tscn")
