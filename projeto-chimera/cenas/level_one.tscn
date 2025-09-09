@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dsel8fy47hpqm"]
+[gd_scene load_steps=5 format=3 uid="uid://dsel8fy47hpqm"]
 
 [ext_resource type="Script" uid="uid://c6pe4h0ky7cxy" path="res://scripts/level_one.gd" id="1_ojold"]
+[ext_resource type="Script" uid="uid://42h6p7iil3pi" path="res://scripts/card_manager.gd" id="2_em1ka"]
+[ext_resource type="Texture2D" uid="uid://dhtfg68imf8f0" path="res://assets/cartas/2geo.jpg" id="3_x6na0"]
+[ext_resource type="Texture2D" uid="uid://ljk7bqo8pqys" path="res://assets/cartas/3geo.jpg" id="4_05ypx"]
 
 [node name="level_one" type="Node2D"]
 script = ExtResource("1_ojold")
@@ -11,18 +14,36 @@ offset_bottom = 649.0
 color = Color(0.356565, 0.356565, 0.356565, 1)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 6.0
-offset_top = 6.0
-offset_right = 1157.0
-offset_bottom = 657.0
+offset_left = 18.0
+offset_top = 4.0
+offset_right = 1169.0
+offset_bottom = 655.0
 text = "FASE 1"
 horizontal_alignment = 1
 
 [node name="teste" type="Button" parent="."]
-offset_left = 364.0
-offset_top = 166.0
-offset_right = 789.0
-offset_bottom = 463.0
+offset_left = 91.0
+offset_top = 66.0
+offset_right = 255.0
+offset_bottom = 133.0
 text = "completar fase"
+
+[node name="cardManager" type="Node2D" parent="."]
+position = Vector2(364, 166)
+script = ExtResource("2_em1ka")
+
+[node name="carta1" type="Node2D" parent="cardManager"]
+
+[node name="Sprite2D" type="Sprite2D" parent="cardManager/carta1"]
+position = Vector2(118, 197)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("3_x6na0")
+
+[node name="carta2" type="Node2D" parent="cardManager"]
+
+[node name="Sprite2D" type="Sprite2D" parent="cardManager/carta2"]
+position = Vector2(217, 199)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("4_05ypx")
 
 [connection signal="pressed" from="teste" to="." method="_on_teste_pressed"]

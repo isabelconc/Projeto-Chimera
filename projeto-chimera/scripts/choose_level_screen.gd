@@ -14,7 +14,7 @@ extends Node2D
 @onready var cadeado_3: Sprite2D = $cadeados/Cadeado3
 
 func _on_voltar_btn_pressed() -> void:
-	get_tree().change_scene_to_file("res://cenas/choose_level_screen.tscn")
+	get_tree().change_scene_to_file("res://cenas/title_screen.tscn")
 	
 func _ready() -> void:
 	button.grab_focus()
