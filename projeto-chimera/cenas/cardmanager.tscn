@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://bd6fitnir8evx"]
+
+[ext_resource type="Script" uid="uid://0woxrh7lirv2" path="res://scripts/cardmanager.gd" id="1_vtglq"]
+[ext_resource type="Texture2D" uid="uid://ljk7bqo8pqys" path="res://assets/cartas/3geo.jpg" id="2_7nenf"]
+[ext_resource type="Texture2D" uid="uid://dhtfg68imf8f0" path="res://assets/cartas/2geo.jpg" id="3_kefis"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cq0ul"]
+size = Vector2(2470, 3520)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fawr1"]
+size = Vector2(50, 70)
+
+[node name="Cardmanager" type="Node2D"]
+script = ExtResource("1_vtglq")
+
+[node name="carta2" type="Node2D" parent="."]
+position = Vector2(450, 94)
+
+[node name="Sprite2D" type="Sprite2D" parent="carta2"]
+position = Vector2(3, 1)
+rotation = 3.14159
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("2_7nenf")
+
+[node name="Area2D" type="Area2D" parent="carta2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="carta2/Area2D"]
+visible = false
+show_behind_parent = true
+position = Vector2(2, 1)
+scale = Vector2(0.02, 0.02)
+shape = SubResource("RectangleShape2D_cq0ul")
+
+[node name="carta1" type="Node2D" parent="."]
+show_behind_parent = true
+position = Vector2(360, 195)
+
+[node name="Sprite2D" type="Sprite2D" parent="carta1"]
+position = Vector2(0, -1)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("3_kefis")
+
+[node name="Area2D" type="Area2D" parent="carta1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="carta1/Area2D"]
+visible = false
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_fawr1")
