@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://xb5mpujyokvs"]
 
-[ext_resource type="Script" uid="uid://dgppxef7n6m3g" path="res://scripts/level_two.gd" id="1_7v2bu"]
+[ext_resource type="Script" uid="uid://dgppxef7n6m3g" path="res://scripts/Levels/level_two.gd" id="1_qmr7h"]
 
 [node name="level_two" type="Node2D"]
-script = ExtResource("1_7v2bu")
+script = ExtResource("1_qmr7h")
 
 [node name="bg" type="ColorRect" parent="."]
 offset_right = 1154.0

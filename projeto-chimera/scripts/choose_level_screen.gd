@@ -52,26 +52,26 @@ func _ready() -> void:
 
 func _on_button_pressed() -> void:
 	if Levelcore.lvl1_unlocked == false:
-		get_tree().change_scene_to_file("res://cenas/level_one.tscn")
+		get_tree().change_scene_to_file("res://cenas/levels/level_one.tscn")
 	else:
-		get_tree().change_scene_to_file("res://cenas/level_one.tscn")
+		get_tree().change_scene_to_file("res://cenas/levels/level_one.tscn")
 
 
 func _on_button_2_pressed() -> void:
 	if Levelcore.lvl1_unlocked == false:
 		null
 	if Levelcore.lvl1_unlocked == true:
-		get_tree().change_scene_to_file("res://cenas/level_two.tscn")
+		get_tree().change_scene_to_file("res://cenas/levels/level_two.tscn")
 
 func _on_button_3_pressed() -> void:
 	if Levelcore.lvl2_unlocked == false:
 		null
 	if Levelcore.lvl2_unlocked == true:
-		get_tree().change_scene_to_file("res://cenas/level_three.tscn")
+		get_tree().change_scene_to_file("res://cenas/levels/level_three.tscn")
 		
 
 func _on_button_4_pressed() -> void:
 	if Levelcore.lvl3_unlocked == false:
 		null
 	if Levelcore.lvl3_unlocked == true:
-		get_tree().change_scene_to_file("res://cenas/level_four.tscn")
+		get_tree().change_scene_to_file("res://cenas/levels/level_four.tscn")

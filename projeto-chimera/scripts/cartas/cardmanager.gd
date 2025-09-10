@@ -31,3 +31,21 @@ func  raycast_check_for_card():
 	if resultado.size() > 0   :
 		return resultado[0].collider.get_parent()
 	return null
+
+func connect_carta_signals(carta):
+	carta.connect("hovered", on_hovered_over_carta)
+	carta.connect("hovered_off", on_hovered_off_carta)
+
+func on_hovered_over_carta (carta):
+	carta_highlight(carta1,false)	
+	
+func on_hovered_off_carta (carta):
+	carta_highlight(carta1, true)	
+
+func carta_highlight (carta):
+	if hovered:
+		carta.scale(Vector2(1.05,1.05))
+		carta.z_index = 2
+	else :
+		carta.scale(Vector2(1,1))
+		carta.z_index = 1
