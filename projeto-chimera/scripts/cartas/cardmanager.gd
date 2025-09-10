@@ -3,6 +3,7 @@ extends Node2D
 var COLLISION_MASK_CARD = 1
 var card_being_dragged 
 var screen_size
+
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	
@@ -34,18 +35,20 @@ func  raycast_check_for_card():
 
 func connect_carta_signals(carta):
 	carta.connect("hovered", on_hovered_over_carta)
-	carta.connect("hovered_off", on_hovered_off_carta)
+	carta.connect("hovered_off" , on_hovered_off_carta)
 
 func on_hovered_over_carta (carta):
-	carta_highlight(carta1,false)	
+	higlight(carta, true)
+	
 	
 func on_hovered_off_carta (carta):
-	carta_highlight(carta1, true)	
-
-func carta_highlight (carta):
+	higlight(carta,false)
+		
+func higlight(carta, hovered):
 	if hovered:
-		carta.scale(Vector2(1.05,1.05))
-		carta.z_index = 2
-	else :
-		carta.scale(Vector2(1,1))
-		carta.z_index = 1
+		carta.scale(Vector2(1.05, 1.05))
+		carta.index_z= 2
+	else:
+		carta.scale(Vector2(1, 1))
+		carta.index_z= 2
+		pass
