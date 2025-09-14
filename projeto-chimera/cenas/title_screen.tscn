@@ -105,12 +105,13 @@ script = ExtResource("1_26sga")
 
 [node name="bg" type="TextureRect" parent="."]
 layout_mode = 2
-offset_left = 94.0
-offset_top = -103.0
-offset_right = 1238.0
-offset_bottom = 533.0
+offset_left = 88.0
+offset_top = -110.0
+offset_right = 1232.0
+offset_bottom = 526.0
+scale = Vector2(1.12045, 1.12581)
 texture = ExtResource("2_7vlxm")
-expand_mode = 2
+stretch_mode = 6
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
