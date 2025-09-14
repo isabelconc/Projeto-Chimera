@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2t26gg62nho5"]
+[gd_scene load_steps=9 format=3 uid="uid://c2t26gg62nho5"]
 
 [ext_resource type="Script" uid="uid://c6pe4h0ky7cxy" path="res://scripts/level_one.gd" id="1_ojold"]
-[ext_resource type="PackedScene" uid="uid://bd6fitnir8evx" path="res://cenas/cardmanager.tscn" id="2_kfi32"]
+[ext_resource type="Script" uid="uid://0woxrh7lirv2" path="res://scripts/cartas/cardmanager.gd" id="3_em1ka"]
+[ext_resource type="Script" uid="uid://cmdor63ycrrin" path="res://cenas/mao_de_jogo.gd" id="4_3yww7"]
+[ext_resource type="PackedScene" uid="uid://durqe77sf7lxv" path="res://cenas/CardSlot.tscn" id="4_x6na0"]
+[ext_resource type="Script" uid="uid://bln2jwr2qke8l" path="res://scripts/deck.gd" id="5_05ypx"]
+[ext_resource type="Texture2D" uid="uid://jb2o217gwou1" path="res://assets/ETHEREALTAROTCARDS1_1200x.jpg" id="5_x6na0"]
+[ext_resource type="Script" uid="uid://n530bqnf2v5d" path="res://scripts/input_manager.gd" id="7_d40pv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05ypx"]
+size = Vector2(141, 226)
 
 [node name="level_one" type="Node2D"]
 script = ExtResource("1_ojold")
@@ -10,6 +18,7 @@ script = ExtResource("1_ojold")
 offset_right = 1154.0
 offset_bottom = 649.0
 scale = Vector2(1.11432, 1.10168)
+mouse_filter = 2
 color = Color(0.227451, 0.278431, 0.196078, 1)
 
 [node name="Label" type="Label" parent="."]
@@ -28,8 +37,6 @@ offset_right = 255.0
 offset_bottom = 133.0
 text = "completar fase"
 
-[node name="Cardmanager" parent="." instance=ExtResource("2_kfi32")]
-
 [node name="HUD" type="CanvasLayer" parent="."]
 
 [node name="PlayerHP" type="ProgressBar" parent="HUD"]
@@ -45,10 +52,10 @@ offset_right = 1239.0
 offset_bottom = 72.0
 
 [node name="DanoPlayerBtn" type="Button" parent="."]
-offset_left = 238.0
-offset_top = 616.0
-offset_right = 368.0
-offset_bottom = 679.0
+offset_left = 41.0
+offset_top = 545.0
+offset_right = 171.0
+offset_bottom = 608.0
 text = "Dano Player -10"
 
 [node name="DanoEnemyBtn" type="Button" parent="."]
@@ -57,5 +64,36 @@ offset_top = 119.0
 offset_right = 1207.0
 offset_bottom = 161.0
 text = "Dano Inimigo -10"
+
+[node name="cardmanager" type="Node2D" parent="."]
+script = ExtResource("3_em1ka")
+
+[node name="CardSlot" parent="." instance=ExtResource("4_x6na0")]
+position = Vector2(348, 263)
+scale = Vector2(0.921895, 0.921167)
+
+[node name="Mao_de_Jogo" type="Node2D" parent="."]
+script = ExtResource("4_3yww7")
+
+[node name="Deck" type="Node2D" parent="."]
+position = Vector2(-313, -73)
+script = ExtResource("5_05ypx")
+
+[node name="Sprite2D" type="Sprite2D" parent="Deck"]
+position = Vector2(431, 464)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_x6na0")
+
+[node name="Area2D" type="Area2D" parent="Deck"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deck/Area2D"]
+visible = false
+position = Vector2(431.5, 464)
+shape = SubResource("RectangleShape2D_05ypx")
+
+[node name="InputManager" type="Node2D" parent="."]
+script = ExtResource("7_d40pv")
 
 [connection signal="pressed" from="teste" to="." method="_on_teste_pressed"]

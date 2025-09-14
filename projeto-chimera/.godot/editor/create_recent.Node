@@ -1,5 +1,6 @@
-Area2D
+RichTextLabel
 Node2D
-Node
 CollisionShape2D
+Area2D
 Sprite2D
+Node
