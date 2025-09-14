@@ -14,6 +14,7 @@ script = ExtResource("1_haomu")
 offset_top = 1.0
 offset_right = 1153.0
 offset_bottom = 645.0
+scale = Vector2(1.10883, 1.1183)
 color = Color(0.555837, 0.523579, 0.540252, 1)
 
 [node name="lvl1_unlocked" type="ColorRect" parent="."]

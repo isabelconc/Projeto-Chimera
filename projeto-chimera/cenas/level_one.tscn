@@ -9,13 +9,15 @@ script = ExtResource("1_ojold")
 [node name="bg" type="ColorRect" parent="."]
 offset_right = 1154.0
 offset_bottom = 649.0
-color = Color(0.356565, 0.356565, 0.356565, 1)
+scale = Vector2(1.11432, 1.10168)
+color = Color(0.227451, 0.278431, 0.196078, 1)
 
 [node name="Label" type="Label" parent="."]
 offset_left = -10.0
 offset_top = 23.0
 offset_right = 1164.0
 offset_bottom = 687.0
+scale = Vector2(1.09548, 1.0399)
 text = "FASE 1"
 horizontal_alignment = 1
 

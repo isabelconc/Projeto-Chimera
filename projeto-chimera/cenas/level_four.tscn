@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://61h62bo2mk45" path="res://scripts/level_four.gd" id="1_rfxp0"]
 
 [node name="level_four" type="Node2D"]
+scale = Vector2(1.10541, 1.10988)
 script = ExtResource("1_rfxp0")
 
 [node name="bg" type="ColorRect" parent="."]

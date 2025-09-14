@@ -8,6 +8,7 @@ script = ExtResource("1_8wl6p")
 [node name="bg" type="ColorRect" parent="."]
 offset_right = 1154.0
 offset_bottom = 649.0
+scale = Vector2(1.10802, 1.11268)
 color = Color(0, 0.0288435, 0.0291359, 1)
 
 [node name="cabecalho" type="Label" parent="."]
