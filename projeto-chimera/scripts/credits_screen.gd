@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var credits_screen: Node2D = $"."
-@onready var voltar_btn: Button = $voltar_btn
+@onready var voltar_btn: Button = $voltar_btn2
 
 
 func _on_voltar_btn_2_pressed() -> void:

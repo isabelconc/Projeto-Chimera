@@ -3,16 +3,14 @@ extends Node2D
 @onready var teste: Button = $teste
 @onready var deck = [""]
 
-# Barras de vida
 @onready var player_hp: ProgressBar = $HUD/PlayerHP
 @onready var enemy_hp: ProgressBar = $HUD/EnemyHP
 
-# Botões de teste
 @onready var dano_player_btn: Button = $DanoPlayerBtn
 @onready var dano_enemy_btn: Button = $DanoEnemyBtn
 
 # Valores iniciais
-var player_max_hp: int = 100
+var player_max_hp: int = 100 
 var enemy_max_hp: int = 100
 var player_current_hp: int = player_max_hp
 var enemy_current_hp: int = enemy_max_hp
