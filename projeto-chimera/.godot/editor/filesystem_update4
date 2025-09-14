@@ -1,0 +1,6 @@
+res://cenas/title_screen.tscn
+res://cenas/credits_screen.tscn
+res://cenas/level_one.tscn
+res://cenas/cartas/carta.tscn
+res://cenas/CardSlot.tscn
+res://cenas/cartas/carta_1.tscn
