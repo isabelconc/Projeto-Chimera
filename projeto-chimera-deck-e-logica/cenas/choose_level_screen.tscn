@@ -141,14 +141,15 @@ horizontal_alignment = 1
 [node name="Button" type="Button" parent="buttons"]
 unique_name_in_owner = true
 anchors_preset = -1
-anchor_left = 0.021875
+anchor_left = -0.0171875
 anchor_top = 0.0777778
 anchor_right = -0.0171875
-offset_left = 145.0
-offset_top = 220.0
-offset_right = 336.0
-offset_bottom = 474.0
-scale = Vector2(1.29061, 1.28828)
+anchor_bottom = 0.0777778
+offset_left = 195.0
+offset_top = 217.00002
+offset_right = 386.0
+offset_bottom = 470.99997
+scale = Vector2(0.9368179, 1.0536681)
 text = "
 "
 metadata/_edit_use_anchors_ = true

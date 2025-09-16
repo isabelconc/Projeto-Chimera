@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Projeto-chimera-deck-e-logica"
 run/main_scene="uid://tlxbx6b6x01s"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.5", "GL Compatibility")
 
 [autoload]
 
