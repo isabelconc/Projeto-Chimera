@@ -1,6 +1,4 @@
-res://cenas/title_screen.tscn
-res://cenas/credits_screen.tscn
+res://scripts/credits_screen.gd
+res://scripts/level_one.gd
 res://cenas/level_one.tscn
-res://cenas/cartas/carta.tscn
-res://cenas/CardSlot.tscn
-res://cenas/cartas/carta_1.tscn
+res://scripts/input_manager.gd

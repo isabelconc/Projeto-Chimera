@@ -32,6 +32,6 @@ func  raycast_at_cursor():
 			COLLISION_MASK_CARD:
 				var carta_found = resultado[0].collider.get_parent()
 				if carta_found:
-					referencia_card_manager.start_draf(carta_found)
+					referencia_card_manager.start_drag(carta_found)
 			COLISSION_MASK_DECK:
 				referencia_deck.desenhar_carta()
