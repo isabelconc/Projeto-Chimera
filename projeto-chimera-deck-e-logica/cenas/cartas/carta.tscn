@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://btunrnpmsmvby"]
+
+[ext_resource type="Script" uid="uid://c6ybxqq2fux34" path="res://scripts/cartas/carta.gd" id="1_opjp5"]
+[ext_resource type="Texture2D" uid="uid://ljk7bqo8pqys" path="res://assets/cartas/3geo.jpg" id="2_6k08e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cq0ul"]
+size = Vector2(7400, 10550)
+
+[node name="carta" type="Node2D"]
+position = Vector2(104, 394)
+script = ExtResource("1_opjp5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(3, 1)
+rotation = 3.14159
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_6k08e")
+
+[node name="Area2D" type="Area2D" parent="."]
+process_priority = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+show_behind_parent = true
+position = Vector2(4, 1.5)
+scale = Vector2(0.02, 0.02)
+shape = SubResource("RectangleShape2D_cq0ul")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
