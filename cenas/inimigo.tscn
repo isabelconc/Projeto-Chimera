@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://db74m6jcw81gg"]
+[gd_scene load_steps=4 format=3 uid="uid://db74m6jcw81gg"]
 
 [ext_resource type="Script" uid="uid://b6fig4c7rnlif" path="res://scripts/inimigo.gd" id="1_1nma5"]
+[ext_resource type="Texture2D" uid="uid://dihxmu83vncx3" path="res://assets/inimigofase1.jpg" id="2_l8wry"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1nma5"]
 
 [node name="Inimigo" type="Node2D"]
 script = ExtResource("1_1nma5")
+
+[node name="Inimigo1" type="Sprite2D" parent="."]
+texture = ExtResource("2_l8wry")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+shape = SubResource("RectangleShape2D_1nma5")
