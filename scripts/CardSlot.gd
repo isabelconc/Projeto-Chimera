@@ -51,8 +51,10 @@ func atualizar_valor():
 
 	var game = get_tree().current_scene
 
+	# Dano no inimigo
 	game.damage_enemy(dano)
 
+	# Cura no player, se houver
 	if cura > 0:
 		game.heal_player(cura)
 
@@ -66,12 +68,20 @@ func atualizar_valor():
 	print("valoe do ataque:", valor_final)
 	
 	# Dano no inimigo
-	var game_ref = $"../HUD/EnemyHP"  # ajuste se seu HUD estiver em outro lugar
-	game_ref.value -= valor_final
-	# ATAQUE DO INIMIGO — turno automático
-	var enemy = $"../HUD/PlayerHP" # ajusta para onde seu Enemy está na cena
-	enemy.value -= 5
+	var game_ref = get_node("../HUD")  # ajuste se seu HUD estiver em outro lugar
+	game_ref.damage_enemy(valor_final)
 
+	# ATAQUE DO INIMIGO — turno automático
+	var enemy = get_node("../Enemy")   # ajusta para onde seu Enemy está na cena
+	enemy.attack_player()
+
+	
+	var timer = Timer.new()
+	timer.one_shot = true
+	timer.wait_time = 0.5
+	add_child(timer)
+	timer.connect("timeout", Callable(self, "limpar_slot"))
+	timer.start()
 
 	card_placed = true
 	self.attack_value = valor_final 
@@ -89,3 +99,13 @@ func mostrar_ataque_temporario(valor):
 	var tween = get_tree().create_tween()
 	tween.tween_property(label, "modulate:a", 0, 0.8).set_delay(1)
 	tween.connect("finished", Callable(label, "hide"))
+
+func limpar_slot():
+	for carta in cartas_no_slot:
+		if carta.is_inside_tree():
+			carta.queue_free()  
+	cartas_no_slot.clear()
+	current_card = null
+	previous_card = null
+	card_placed = false
+	print("Slot limpo e pronto para novas cartas.")
