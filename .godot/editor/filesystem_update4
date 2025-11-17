@@ -1,0 +1,3 @@
+res://cenas/title_screen.tscn
+res://cenas/level_one.tscn
+res://scripts/CardSlot.gd

@@ -66,12 +66,11 @@ func atualizar_valor():
 	print("valoe do ataque:", valor_final)
 	
 	# Dano no inimigo
-	var game_ref = get_node("../HUD")  # ajuste se seu HUD estiver em outro lugar
-	game_ref.damage_enemy(valor_final)
-
+	var game_ref = $"../HUD/EnemyHP"  # ajuste se seu HUD estiver em outro lugar
+	game_ref.value -= valor_final
 	# ATAQUE DO INIMIGO — turno automático
-	var enemy = get_node("../Enemy")   # ajusta para onde seu Enemy está na cena
-	enemy.attack_player()
+	var enemy = $"../HUD/PlayerHP" # ajusta para onde seu Enemy está na cena
+	enemy.value -= 5
 
 
 	card_placed = true
