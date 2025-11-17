@@ -1,23 +1,28 @@
-[gd_scene load_steps=7 format=3 uid="uid://dpyylmdu3cgrn"]
+[gd_scene load_steps=9 format=3 uid="uid://dpyylmdu3cgrn"]
 
 [ext_resource type="Script" uid="uid://conek8201w0wb" path="res://scripts/choose_level_screen.gd" id="1_haomu"]
 [ext_resource type="Texture2D" uid="uid://dxrghnj8mpda1" path="res://assets/Naipe_copas.png" id="2_hxnwc"]
+[ext_resource type="Texture2D" uid="uid://e80kjwf8jr8d" path="res://assets/telafase/fundo.png" id="2_ijiim"]
 [ext_resource type="Texture2D" uid="uid://cttqvwy1jg1kv" path="res://assets/Naipe_paus.png" id="3_ijiim"]
 [ext_resource type="Texture2D" uid="uid://b41mf7t8l6x7j" path="res://assets/Naipe_ouros.png" id="4_5mfbw"]
 [ext_resource type="Texture2D" uid="uid://lqnrf1vlveqn" path="res://assets/Naipe_espadas.png" id="5_bpqq2"]
 [ext_resource type="Texture2D" uid="uid://cvv4owk4wbg6p" path="res://assets/cadeado.png" id="6_ovee1"]
+[ext_resource type="Texture2D" uid="uid://cssfujjw5yy0c" path="res://assets/telafase/portais.png" id="8_5mfbw"]
 
 [node name="ChooseLevelScreen" type="Node2D"]
 script = ExtResource("1_haomu")
 
-[node name="bg" type="ColorRect" parent="."]
-offset_top = 1.0
-offset_right = 1153.0
+[node name="bg" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 1151.0
 offset_bottom = 645.0
 scale = Vector2(1.10883, 1.1183)
-color = Color(0.555837, 0.523579, 0.540252, 1)
+texture = ExtResource("2_ijiim")
+expand_mode = 1
 
 [node name="lvl1_unlocked" type="ColorRect" parent="."]
+visible = false
 offset_left = 144.0
 offset_top = 268.0
 offset_right = 323.0
@@ -25,6 +30,7 @@ offset_bottom = 512.0
 color = Color(0, 0.690196, 0, 1)
 
 [node name="lvl2_unlocked" type="ColorRect" parent="."]
+visible = false
 offset_left = 376.0
 offset_top = 266.0
 offset_right = 567.0
@@ -32,6 +38,7 @@ offset_bottom = 520.0
 color = Color(0, 0.686275, 0, 1)
 
 [node name="lvl3_unlocked" type="ColorRect" parent="."]
+visible = false
 offset_left = 608.0
 offset_top = 268.0
 offset_right = 796.0
@@ -39,42 +46,15 @@ offset_bottom = 519.0
 color = Color(0, 0.682353, 0, 1)
 
 [node name="lvl4_unlocked" type="ColorRect" parent="."]
+visible = false
 offset_left = 829.0
 offset_top = 267.0
 offset_right = 1009.0
 offset_bottom = 509.0
 color = Color(0, 0.678431, 0, 1)
 
-[node name="lvl1_locked" type="ColorRect" parent="."]
-offset_left = 146.0
-offset_top = 269.0
-offset_right = 324.0
-offset_bottom = 512.0
-color = Color(1, 0.0196078, 0, 1)
-
-[node name="lvl2_locked" type="ColorRect" parent="."]
-offset_left = 375.0
-offset_top = 264.0
-offset_right = 572.0
-offset_bottom = 523.0
-color = Color(0.996078, 0.0196078, 0, 1)
-
-[node name="lvl3_locked" type="ColorRect" parent="."]
-offset_left = 607.0
-offset_top = 265.0
-offset_right = 798.0
-offset_bottom = 521.0
-color = Color(0.992157, 0.0196078, 0, 1)
-
-[node name="lvl4_locked" type="ColorRect" parent="."]
-offset_left = 826.0
-offset_top = 263.0
-offset_right = 1012.0
-offset_bottom = 511.0
-color = Color(0.988235, 0.0196078, 0, 1)
-metadata/_edit_use_anchors_ = true
-
 [node name="lvl1_imagem" type="TextureRect" parent="."]
+visible = false
 offset_left = 194.0
 offset_top = 529.0
 offset_right = 267.0
@@ -83,6 +63,7 @@ texture = ExtResource("2_hxnwc")
 expand_mode = 1
 
 [node name="lvl2_imagem" type="TextureRect" parent="."]
+visible = false
 offset_left = 447.0
 offset_top = 531.0
 offset_right = 512.0
@@ -91,6 +72,7 @@ texture = ExtResource("3_ijiim")
 expand_mode = 1
 
 [node name="lvl3_imagem" type="TextureRect" parent="."]
+visible = false
 offset_left = 664.0
 offset_top = 513.0
 offset_right = 769.0
@@ -99,6 +81,7 @@ texture = ExtResource("4_5mfbw")
 expand_mode = 1
 
 [node name="lvl4_imagem" type="TextureRect" parent="."]
+visible = false
 offset_left = 869.0
 offset_top = 502.0
 offset_right = 965.0
@@ -109,24 +92,25 @@ expand_mode = 1
 [node name="labels" type="Node" parent="."]
 
 [node name="Label3" type="Label" parent="labels"]
-offset_left = 421.0
-offset_top = 183.0
-offset_right = 522.0
-offset_bottom = 254.0
+offset_left = 471.0
+offset_top = 613.0
+offset_right = 572.0
+offset_bottom = 684.0
 text = "NÍVEL 2
 GEOMETRIA"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="labels"]
-offset_left = 169.0
-offset_top = 191.0
-offset_right = 270.0
-offset_bottom = 262.0
+offset_left = 203.0
+offset_top = 614.0
+offset_right = 304.0
+offset_bottom = 685.0
 text = "NÍVEL 1
-FUNÇÕES"
+ARITMÉTICA"
 horizontal_alignment = 1
 
 [node name="Label" type="Label" parent="labels"]
+visible = false
 offset_left = 5.0
 offset_top = -3.0
 offset_right = 1152.0
@@ -135,61 +119,64 @@ text = "SELEÇÃO DE NÍVEIS"
 horizontal_alignment = 1
 
 [node name="Label4" type="Label" parent="labels"]
-offset_left = 646.0
-offset_top = 187.0
-offset_right = 747.0
-offset_bottom = 258.0
+offset_left = 730.0
+offset_top = 623.0
+offset_right = 831.0
+offset_bottom = 694.0
 text = "NÍVEL 3
-ESTATÍSTICA"
+FUNÇÕES"
 horizontal_alignment = 1
 
 [node name="Label5" type="Label" parent="labels"]
-offset_left = 861.0
-offset_top = 182.0
-offset_right = 968.0
-offset_bottom = 236.0
+offset_left = 993.0
+offset_top = 628.0
+offset_right = 1100.0
+offset_bottom = 682.0
 text = "NÍVEL 4
-ARITMÉTICA"
+PROBABILIDADE"
 horizontal_alignment = 1
 
 [node name="buttons" type="Node" parent="."]
 
 [node name="Button" type="Button" parent="buttons"]
 unique_name_in_owner = true
-offset_left = 139.0
-offset_top = 264.0
-offset_right = 330.0
-offset_bottom = 518.0
-text = "NÍVEL 1
-FUNÇÕES"
+anchors_preset = -1
+anchor_left = -0.025
+anchor_top = 0.00555556
+anchor_right = -0.025
+anchor_bottom = 0.00555556
+offset_left = 145.0
+offset_top = 220.0
+offset_right = 336.0
+offset_bottom = 474.0
+scale = Vector2(1.29061, 1.28828)
+text = "
+"
 metadata/_edit_use_anchors_ = true
 
 [node name="Button2" type="Button" parent="buttons"]
 unique_name_in_owner = true
-offset_left = 367.0
-offset_top = 255.0
-offset_right = 582.0
-offset_bottom = 532.0
-text = "NÍVEL 2
-GEOMETRIA"
+offset_left = 432.0
+offset_top = 274.0
+offset_right = 576.0
+offset_bottom = 474.0
+scale = Vector2(1.2262, 1.33553)
 
 [node name="Button3" type="Button" parent="buttons"]
 unique_name_in_owner = true
-offset_left = 599.0
-offset_top = 254.0
-offset_right = 804.0
-offset_bottom = 530.0
-text = "NÍVEL 3
-ESTATÍSTICA"
+offset_left = 692.0
+offset_top = 272.0
+offset_right = 841.0
+offset_bottom = 473.0
+scale = Vector2(1.2254, 1.29878)
 
 [node name="Button4" type="Button" parent="buttons"]
 unique_name_in_owner = true
-offset_left = 818.0
-offset_top = 254.0
-offset_right = 1030.0
-offset_bottom = 526.0
-text = "NÍVEL 4
-ARITMÉTICA"
+offset_left = 961.0
+offset_top = 277.0
+offset_right = 1104.0
+offset_bottom = 486.0
+scale = Vector2(1.19679, 1.22346)
 
 [node name="voltar_btn" type="Button" parent="buttons"]
 offset_left = 11.0
@@ -201,19 +188,24 @@ text = "VOLTAR"
 [node name="cadeados" type="Node" parent="."]
 
 [node name="Cadeado3" type="Sprite2D" parent="cadeados"]
-position = Vector2(917, 449)
+position = Vector2(1040, 418)
 scale = Vector2(0.152344, 0.152344)
 texture = ExtResource("6_ovee1")
 
 [node name="Cadeado" type="Sprite2D" parent="cadeados"]
-position = Vector2(468, 458)
+position = Vector2(516, 415)
 scale = Vector2(0.152344, 0.152344)
 texture = ExtResource("6_ovee1")
 
 [node name="Cadeado2" type="Sprite2D" parent="cadeados"]
-position = Vector2(702, 454)
+position = Vector2(773, 417)
 scale = Vector2(0.152344, 0.152344)
 texture = ExtResource("6_ovee1")
+
+[node name="Portais" type="Sprite2D" parent="."]
+position = Vector2(644, 359)
+scale = Vector2(0.306157, 0.2375)
+texture = ExtResource("8_5mfbw")
 
 [connection signal="pressed" from="buttons/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="buttons/Button2" to="." method="_on_button_2_pressed"]
