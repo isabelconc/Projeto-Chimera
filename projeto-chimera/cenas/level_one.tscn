@@ -1,12 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://c2t26gg62nho5"]
+[gd_scene load_steps=11 format=3 uid="uid://c2t26gg62nho5"]
 
 [ext_resource type="Script" uid="uid://c6pe4h0ky7cxy" path="res://scripts/level_one.gd" id="1_ojold"]
+[ext_resource type="Script" uid="uid://ukip4jxl4lb1" path="res://scripts/hud.gd" id="2_ocyo5"]
 [ext_resource type="Script" uid="uid://0woxrh7lirv2" path="res://scripts/cartas/cardmanager.gd" id="3_em1ka"]
 [ext_resource type="Script" uid="uid://cmdor63ycrrin" path="res://cenas/mao_de_jogo.gd" id="4_3yww7"]
 [ext_resource type="PackedScene" uid="uid://durqe77sf7lxv" path="res://cenas/CardSlot.tscn" id="4_x6na0"]
 [ext_resource type="Script" uid="uid://bln2jwr2qke8l" path="res://scripts/deck.gd" id="5_05ypx"]
 [ext_resource type="Texture2D" uid="uid://jb2o217gwou1" path="res://assets/ETHEREALTAROTCARDS1_1200x.jpg" id="5_x6na0"]
 [ext_resource type="Script" uid="uid://n530bqnf2v5d" path="res://scripts/input_manager.gd" id="7_d40pv"]
+[ext_resource type="PackedScene" uid="uid://db74m6jcw81gg" path="res://cenas/inimigo.tscn" id="8_8vvi4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_05ypx"]
 size = Vector2(141, 226)
@@ -21,14 +23,8 @@ scale = Vector2(1.11432, 1.10168)
 mouse_filter = 2
 color = Color(0.227451, 0.278431, 0.196078, 1)
 
-[node name="teste" type="Button" parent="."]
-offset_left = 6.0
-offset_top = 12.0
-offset_right = 142.0
-offset_bottom = 65.0
-text = "completar fase"
-
 [node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("2_ocyo5")
 
 [node name="PlayerHP" type="ProgressBar" parent="HUD"]
 offset_left = 1085.0
@@ -87,4 +83,15 @@ shape = SubResource("RectangleShape2D_05ypx")
 [node name="InputManager" type="Node2D" parent="."]
 script = ExtResource("7_d40pv")
 
-[connection signal="pressed" from="teste" to="." method="_on_teste_pressed"]
+[node name="Inimigo" parent="." instance=ExtResource("8_8vvi4")]
+position = Vector2(642, 139)
+scale = Vector2(0.468948, 0.283615)
+
+[node name="ataque" type="Button" parent="."]
+offset_left = 880.0
+offset_top = 427.0
+offset_right = 1010.0
+offset_bottom = 488.0
+text = "ATACAR"
+
+[connection signal="pressed" from="ataque" to="CardSlot" method="_on_ataque_pressed"]

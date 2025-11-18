@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://djuxfmufxj4cl"]
+
+[ext_resource type="Script" uid="uid://capv6cdqyut4f" path="res://cenas/ko_screen.gd" id="1_p21a2"]
+
+[node name="KoScreen" type="Node2D"]
+script = ExtResource("1_p21a2")
+
+[node name="bg" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(31.884, 17.8872)
+color = Color(0.876935, 0.597628, 0.940077, 1)
+
+[node name="passed" type="Label" parent="."]
+offset_left = 138.0
+offset_top = 85.0
+offset_right = 337.0
+offset_bottom = 108.0
+scale = Vector2(5.0066, 9.78295)
+text = "PARABÉNS! VOCÊ PASSOU"
+
+[node name="again" type="Button" parent="."]
+offset_left = 163.0
+offset_top = 428.0
+offset_right = 325.0
+offset_bottom = 459.0
+scale = Vector2(1.90504, 4.02648)
+text = "JOGAR NOVAMENTE"
+
+[node name="novafase" type="Button" parent="."]
+offset_left = 697.0
+offset_top = 434.0
+offset_right = 859.0
+offset_bottom = 465.0
+scale = Vector2(1.90504, 4.02648)
+text = "PRÓXIMA FASE"
+
+[connection signal="pressed" from="again" to="." method="_on_again_pressed"]
+[connection signal="pressed" from="novafase" to="." method="_on_novafase_pressed"]

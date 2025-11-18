@@ -21,33 +21,31 @@ func _ready() -> void:
 	
 	# FASE 1
 	if Levelcore.lvl1_unlocked == true:
-		lvl_1_locked.visible = false
 		cadeado.visible = false
 	if Levelcore.lvl1_unlocked == false:
-		lvl_1_locked.visible = true
+	
 		cadeado.visible = true
 	
 	# FASE 2
 	if Levelcore.lvl2_unlocked == true:
-		lvl_2_locked.visible = false
 		cadeado_2.visible = false
 	if Levelcore.lvl2_unlocked == false:
-		lvl_2_locked.visible = true
+		
 		cadeado_2.visible = true
 		
 	# FASE 3
 	if Levelcore.lvl3_unlocked == true:
-		lvl_3_locked.visible = false
+		
 		cadeado_3.visible = false
 	if Levelcore.lvl3_unlocked == false:
-		lvl_3_locked.visible = true
+		
 		cadeado_3.visible = true
 		
 	# FASE 4
 	if Levelcore.lvl4_unlocked == true:
-		lvl_4_locked.visible = false
+		pass
 	if Levelcore.lvl1_unlocked == false:
-		lvl_4_locked.visible = true
+		pass
 
 
 func _on_button_pressed() -> void:
