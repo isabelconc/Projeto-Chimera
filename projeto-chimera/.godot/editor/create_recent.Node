@@ -1,5 +1,14 @@
-Area2D
-Node2D
-Node
+ColorRect
+Button
+Label
+VBoxContainer
+HBoxContainer
+Control
+CanvasLayer
+TextureRect
 CollisionShape2D
+Area2D
 Sprite2D
+Node
+RichTextLabel
+Node2D

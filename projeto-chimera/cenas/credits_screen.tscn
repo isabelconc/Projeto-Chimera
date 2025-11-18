@@ -1,57 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://6xoqq871pxfm"]
+[gd_scene load_steps=3 format=3 uid="uid://6xoqq871pxfm"]
 
 [ext_resource type="Script" uid="uid://dk6gdbvcyuylv" path="res://scripts/credits_screen.gd" id="1_8wl6p"]
+[ext_resource type="Texture2D" uid="uid://ibur3vpqlpm0" path="res://assets/creditsscene.jpg" id="2_ti53i"]
 
 [node name="credits_screen" type="Node2D"]
 script = ExtResource("1_8wl6p")
 
-[node name="bg" type="ColorRect" parent="."]
+[node name="bg" type="TextureRect" parent="."]
 offset_right = 1154.0
 offset_bottom = 649.0
-scale = Vector2(1.10802, 1.11268)
-color = Color(0, 0.0288435, 0.0291359, 1)
-
-[node name="cabecalho" type="Label" parent="."]
-offset_left = -3.0
-offset_top = 22.0
-offset_right = 1139.0
-offset_bottom = 123.0
-text = "CRÉDITOS DO JOGO AOS INTEGRANTES DO GRUPO 
-
-
-"
-horizontal_alignment = 1
-
-[node name="nomes" type="Label" parent="."]
-offset_left = 3.0
-offset_top = 135.0
-offset_right = 1145.0
-offset_bottom = 366.0
-text = "CARLOS EDUARDO DA CONCEIÇÃO SANTOS
-
-ISABEL ALMEIDA CONCEIÇÃO
-
-LAURA JARDIM SANTOS
-
-MELISSA SCHIAVONE CARDOSO
-
-SOL MARTINS"
-
-[node name="nomes2" type="Label" parent="."]
-offset_left = 3.0
-offset_top = 401.0
-offset_right = 1145.0
-offset_bottom = 632.0
-text = "ORIENTADORES DA DISCIPLINA: PATRÍCIA ANDREA PALADINO E PATRICK ANDERSON MATIAS DE ARAÚJO
-
-STE JOGO FOI DESENVOLVIDO COMO ATIVDADE PARA A DISCIPLINA DE MATEMÁTICA COMPUTACIONAL, 
-PERTENCENTE AO CURSO DE DESENVOLVIMENTO DE SISTEMAS DO INSTITUTO FEDERAL."
+scale = Vector2(0.801531, 0.631717)
+texture = ExtResource("2_ti53i")
 
 [node name="voltar_btn2" type="Button" parent="."]
-offset_left = 36.0
-offset_top = 18.0
-offset_right = 106.0
-offset_bottom = 49.0
+offset_left = 1104.0
+offset_top = 635.0
+offset_right = 1174.0
+offset_bottom = 666.0
+scale = Vector2(2.13822, 2.11079)
 text = "VOLTAR"
 metadata/_edit_use_anchors_ = true
 

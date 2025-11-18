@@ -16,12 +16,3 @@ offset_right = 1153.0
 offset_bottom = 648.0
 text = "FASE 4"
 horizontal_alignment = 1
-
-[node name="teste" type="Button" parent="."]
-offset_left = 320.0
-offset_top = 148.0
-offset_right = 824.0
-offset_bottom = 457.0
-text = "COMPLETAR A FASE"
-
-[connection signal="pressed" from="teste" to="." method="_on_teste_pressed"]

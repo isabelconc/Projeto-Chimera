@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8ufad28g6pii"]
+
+[ext_resource type="Script" uid="uid://ciiq6wofl103v" path="res://scripts/quiz.gd" id="1_3r6ci"]
+
+[node name="Quiz" type="CanvasLayer"]
+script = ExtResource("1_3r6ci")
+
+[node name="content" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1279.0
+offset_bottom = 720.0
+
+[node name="ColorRect" type="ColorRect" parent="content"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.49, 0.21, 0.35, 1)
+
+[node name="QuestionHolder" type="HBoxContainer" parent="content"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -622.5
+offset_top = -266.0
+offset_right = 623.5
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="content/QuestionHolder"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button2" type="Button" parent="content/QuestionHolder"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button3" type="Button" parent="content/QuestionHolder"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button4" type="Button" parent="content/QuestionHolder"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Question_info" type="VBoxContainer" parent="content"]
+layout_mode = 0
+offset_right = 1281.0
+offset_bottom = 295.0
+
+[node name="QuestionText" type="Label" parent="content/Question_info"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 45
+horizontal_alignment = 1
+vertical_alignment = 1

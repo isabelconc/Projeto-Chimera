@@ -145,13 +145,14 @@ anchor_left = -0.025
 anchor_top = 0.00555556
 anchor_right = -0.025
 anchor_bottom = 0.00555556
-offset_left = 145.0
-offset_top = 220.0
-offset_right = 336.0
-offset_bottom = 474.0
-scale = Vector2(1.29061, 1.28828)
+offset_left = 200.0
+offset_top = 276.0
+offset_right = 391.0
+offset_bottom = 530.0
+scale = Vector2(0.916263, 1.01071)
 text = "
 "
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Button2" type="Button" parent="buttons"]
@@ -161,6 +162,7 @@ offset_top = 274.0
 offset_right = 576.0
 offset_bottom = 474.0
 scale = Vector2(1.2262, 1.33553)
+flat = true
 
 [node name="Button3" type="Button" parent="buttons"]
 unique_name_in_owner = true
@@ -169,6 +171,7 @@ offset_top = 272.0
 offset_right = 841.0
 offset_bottom = 473.0
 scale = Vector2(1.2254, 1.29878)
+flat = true
 
 [node name="Button4" type="Button" parent="buttons"]
 unique_name_in_owner = true
@@ -177,6 +180,7 @@ offset_top = 277.0
 offset_right = 1104.0
 offset_bottom = 486.0
 scale = Vector2(1.19679, 1.22346)
+flat = true
 
 [node name="voltar_btn" type="Button" parent="buttons"]
 offset_left = 11.0

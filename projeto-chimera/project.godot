@@ -17,6 +17,10 @@ config/features=PackedStringArray("4.4", "GL Compatibility")
 [autoload]
 
 Levelcore="*res://scripts/levelcore.gd"
+BddProb="*res://scripts/models/BDDProb.gd"
+BddGeo="*res://scripts/models/BDDGeo.gd"
+BddFunc="*res://scripts/models/BDDFunc.gd"
+BddArit="*res://scripts/models/BDDArit.gd"
 
 [display]
 

@@ -14,19 +14,19 @@ var valor_base := 0
 func _ready() -> void: 
 	print("DEBUG:", name, "tem card_name =", card_name)
 	match card_name: 
-		"asgeo": valor_base = 1 
-		"2geo": valor_base = 2 
-		"3geo": valor_base = 3 
-		"4geo": valor_base = 4 
-		"5geo": valor_base = 5 
-		"6geo": valor_base = 6 
-		"7geo": valor_base = 7 
-		"8geo": valor_base = 8 
-		"9geo": valor_base = 9 
-		"10geo": valor_base = 10
-		"jgeo": valor_base = 10 
-		"qgeo": valor_base = 10 
-		"kgeo": valor_base = 10 
+		"asfunc": valor_base = 1 
+		"2func": valor_base = 2 
+		"3func": valor_base = 3 
+		"4func": valor_base = 4 
+		"5func": valor_base = 5 
+		"6func": valor_base = 6 
+		"7func": valor_base = 7 
+		"8func": valor_base = 8 
+		"9func": valor_base = 9 
+		"10func": valor_base = 10 
+		"jfunc": valor_base = 10 
+		"qfunc": valor_base = 10 
+		"kfunc": valor_base = 10 
 
 		
 	get_parent().connect_carta_signals(self)

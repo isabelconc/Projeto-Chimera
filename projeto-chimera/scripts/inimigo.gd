@@ -3,10 +3,12 @@ extends Node2D
 signal enemy_attacked(damage)
 signal enemy_died
 
-var max_hp = 100
-var current_hp = 100
+var max_hp = 700
+var current_hp = 700
 var attack_damage = 50
 var alive := true
+var next_attack_cancelled = false
+
 
 func update_health_bar():
 	if has_node("../HUD/EnemyHP"):
@@ -41,7 +43,18 @@ func take_damage(amount):
 
 func attack_player():
 	if not alive:
-		print("Inimigo está morto, não ataca")
 		return
+
+	if next_attack_cancelled:
+		next_attack_cancelled = false
+		print("Ataque do inimigo cancelado (J)")
+		return
+
+	var timer := get_tree().create_timer(0.4)
+	await timer.timeout
+
+	if get_tree().current_scene.has_method("show_enemy_attack_popup"):
+		get_tree().current_scene.show_enemy_attack_popup(attack_damage)
+
 	print("Inimigo atacou com", attack_damage)
-	emit_signal("enemy_attacked", attack_damage)
+	get_tree().current_scene.damage_player(attack_damage)
