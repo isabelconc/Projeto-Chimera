@@ -1,7 +1,7 @@
 extends Node2D
 
-const CARD_SCENE_PATH = "res://cenas/cartas/cartaFunc.tscn"
-var deck = ["asfunc", "2func", "3func", "4func", "5func", "6func", "7func", "8func", "9func", "10func", "kfunc", "qfunc", "jfunc", "qfunc"]
+const CARD_SCENE_PATH = "res://cenas/cartas/cartaProb.tscn"
+var deck = ["asprob", "2prob", "3prob", "4prob", "5prob", "6prob", "7prob", "8prob", "9prob", "10prob", "kprob", "qprob", "jprob", "kprob"]
 var card_database_reference 
 
 func _ready() -> void:
@@ -20,7 +20,7 @@ func desenhar_carta():
 	
 	var nova_carta = card_scene.instantiate()
 	nova_carta.card_name = carta_desenhada 
-	var card_image_path = str("res://assets/joguinho-main/deckfunc/" + carta_desenhada + ".png")
+	var card_image_path = str("res://assets/joguinho-main/deckprob/" + carta_desenhada + ".png")
 	nova_carta.get_node("CardImage").texture = load(card_image_path)
 	$"../cardmanager".add_child(nova_carta)
 	$"../Mao_de_Jogo".add_carta_para_mao(nova_carta)

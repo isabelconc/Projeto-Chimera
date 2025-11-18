@@ -9,9 +9,9 @@ var screen_size
 var is_hovering_on_card 
 var refenrencia_de_mao 
 
-func _ready() -> void: 
+func _ready() -> void:
 	screen_size = get_viewport_rect().size 
-	refenrencia_de_mao = $"../Mao_de_Jogo" 
+	refenrencia_de_mao =  get_parent().get_node("Mao_de_Jogo")
 	$"../InputManager".connect("left_mouse_button_released", on_left_click_released)
 
 func _process(_delta: float) -> void: 

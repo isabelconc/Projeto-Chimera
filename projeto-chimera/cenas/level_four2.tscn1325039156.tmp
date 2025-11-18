@@ -1,0 +1,96 @@
+[gd_scene load_steps=12 format=3 uid="uid://bht4krf3iv7vf"]
+
+[ext_resource type="Script" uid="uid://61h62bo2mk45" path="res://scripts/level_four.gd" id="1_vmalo"]
+[ext_resource type="Texture2D" uid="uid://d0h2j42ug7ac6" path="res://assets/joguinho-main/deckmar/deckmar/partetras.jpg" id="2_muh2r"]
+[ext_resource type="Script" uid="uid://ukip4jxl4lb1" path="res://scripts/hud.gd" id="3_i10oi"]
+[ext_resource type="Script" uid="uid://0woxrh7lirv2" path="res://scripts/cartas/cardmanager.gd" id="4_6dfsn"]
+[ext_resource type="Script" uid="uid://cmdor63ycrrin" path="res://cenas/mao_de_jogo.gd" id="6_n5k5m"]
+[ext_resource type="Script" uid="uid://bln2jwr2qke8l" path="res://assets/deck.gd" id="7_n3jnh"]
+[ext_resource type="Texture2D" uid="uid://jb2o217gwou1" path="res://assets/ETHEREALTAROTCARDS1_1200x.jpg" id="8_smfof"]
+[ext_resource type="Script" uid="uid://n530bqnf2v5d" path="res://scripts/input_manager.gd" id="9_oh2js"]
+[ext_resource type="PackedScene" uid="uid://c3mytlcqdofv5" path="res://cenas/inimigoProb.tscn" id="9_vmalo"]
+[ext_resource type="PackedScene" uid="uid://dqt7bipyi2xn4" path="res://cenas/CardSlotProb.tscn" id="10_muh2r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05ypx"]
+size = Vector2(141, 226)
+
+[node name="level_four2" type="Node2D"]
+script = ExtResource("1_vmalo")
+
+[node name="bg" type="TextureRect" parent="."]
+offset_left = -4.0
+offset_top = 710.0
+offset_right = 2476.0
+offset_bottom = 4218.0
+rotation = -1.56979
+scale = Vector2(0.285375, 0.364472)
+mouse_filter = 2
+texture = ExtResource("2_muh2r")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("3_i10oi")
+
+[node name="PlayerHP" type="ProgressBar" parent="HUD"]
+offset_left = 1085.0
+offset_top = 641.0
+offset_right = 1258.0
+offset_bottom = 694.0
+max_value = 200.0
+show_percentage = false
+
+[node name="HPText" type="Label" parent="HUD/PlayerHP"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnemyHP" type="ProgressBar" parent="HUD"]
+offset_left = 1097.0
+offset_top = 30.0
+offset_right = 1260.0
+offset_bottom = 89.0
+show_percentage = false
+
+[node name="HPText" type="Label" parent="HUD/EnemyHP"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnemyAttackLabel" type="Label" parent="HUD"]
+offset_left = 823.0
+offset_top = 209.0
+offset_right = 863.0
+offset_bottom = 232.0
+
+[node name="cardmanager" type="Node2D" parent="."]
+script = ExtResource("4_6dfsn")
+
+[node name="Mao_de_Jogo" type="Node2D" parent="."]
+script = ExtResource("6_n5k5m")
+
+[node name="Deck" type="Node2D" parent="."]
+position = Vector2(-153, 284)
+scale = Vector2(0.6, 0.6)
+script = ExtResource("7_n3jnh")
+
+[node name="Sprite2D" type="Sprite2D" parent="Deck"]
+position = Vector2(445, 446.667)
+scale = Vector2(0.222133, 0.209324)
+texture = ExtResource("8_smfof")
+
+[node name="Area2D" type="Area2D" parent="Deck"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deck/Area2D"]
+visible = false
+position = Vector2(431.5, 464)
+shape = SubResource("RectangleShape2D_05ypx")
+
+[node name="InputManager" type="Node2D" parent="."]
+script = ExtResource("9_oh2js")
+
+[node name="InimigoProb" parent="." instance=ExtResource("9_vmalo")]
+position = Vector2(688, 32)
+
+[node name="CardSlotProb" parent="." instance=ExtResource("10_muh2r")]
+position = Vector2(657, 399)
