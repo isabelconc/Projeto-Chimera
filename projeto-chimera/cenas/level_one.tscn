@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c2t26gg62nho5"]
+[gd_scene load_steps=15 format=3 uid="uid://c2t26gg62nho5"]
 
 [ext_resource type="Script" uid="uid://c6pe4h0ky7cxy" path="res://scripts/level_one.gd" id="1_ojold"]
 [ext_resource type="Texture2D" uid="uid://d0h2j42ug7ac6" path="res://assets/joguinho-main/deckmar/deckmar/partetras.jpg" id="2_gx3w5"]
@@ -10,6 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://jb2o217gwou1" path="res://assets/ETHEREALTAROTCARDS1_1200x.jpg" id="5_x6na0"]
 [ext_resource type="Script" uid="uid://n530bqnf2v5d" path="res://scripts/input_manager.gd" id="7_d40pv"]
 [ext_resource type="PackedScene" uid="uid://db74m6jcw81gg" path="res://cenas/inimigo.tscn" id="8_8vvi4"]
+[ext_resource type="AudioStream" uid="uid://cpk3gocgcuyps" path="res://sounds/Hollow Knight OST - False Knight [vKDQNGDOdE4].mp3" id="11_33ir7"]
+[ext_resource type="AudioStream" uid="uid://c6yxe4mxrnkd0" path="res://sounds/dragon-breathing-fire-364475.mp3" id="11_vmibb"]
+[ext_resource type="AudioStream" uid="uid://dqlihsrnuib68" path="res://sounds/video-game-hit-noise-001-135821.mp3" id="13_q6lvo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_05ypx"]
 size = Vector2(141, 226)
@@ -26,6 +29,7 @@ rotation = -1.56979
 scale = Vector2(0.285375, 0.364472)
 mouse_filter = 2
 texture = ExtResource("2_gx3w5")
+metadata/_edit_use_anchors_ = true
 
 [node name="HUD" type="CanvasLayer" parent="."]
 script = ExtResource("2_ocyo5")
@@ -37,11 +41,13 @@ offset_right = 1258.0
 offset_bottom = 694.0
 max_value = 200.0
 show_percentage = false
+metadata/_edit_use_anchors_ = true
 
 [node name="HPText" type="Label" parent="HUD/PlayerHP"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+metadata/_edit_use_anchors_ = true
 
 [node name="EnemyHP" type="ProgressBar" parent="HUD"]
 offset_left = 1097.0
@@ -49,17 +55,20 @@ offset_top = 30.0
 offset_right = 1260.0
 offset_bottom = 89.0
 show_percentage = false
+metadata/_edit_use_anchors_ = true
 
 [node name="HPText" type="Label" parent="HUD/EnemyHP"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+metadata/_edit_use_anchors_ = true
 
 [node name="EnemyAttackLabel" type="Label" parent="HUD"]
 offset_left = 823.0
 offset_top = 209.0
 offset_right = 863.0
 offset_bottom = 232.0
+metadata/_edit_use_anchors_ = true
 
 [node name="cardmanager" type="Node2D" parent="."]
 script = ExtResource("3_em1ka")
@@ -96,3 +105,16 @@ script = ExtResource("7_d40pv")
 [node name="Inimigo" parent="." instance=ExtResource("8_8vvi4")]
 position = Vector2(642, 139)
 scale = Vector2(0.255914, 0.153503)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_33ir7")
+autoplay = true
+playback_type = 1
+parameters/looping = false
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_vmibb")
+parameters/looping = false
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_q6lvo")

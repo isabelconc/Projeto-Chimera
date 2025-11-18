@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dpyylmdu3cgrn"]
+[gd_scene load_steps=10 format=3 uid="uid://dpyylmdu3cgrn"]
 
 [ext_resource type="Script" uid="uid://conek8201w0wb" path="res://scripts/choose_level_screen.gd" id="1_haomu"]
 [ext_resource type="Texture2D" uid="uid://dxrghnj8mpda1" path="res://assets/Naipe_copas.png" id="2_hxnwc"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://lqnrf1vlveqn" path="res://assets/Naipe_espadas.png" id="5_bpqq2"]
 [ext_resource type="Texture2D" uid="uid://cvv4owk4wbg6p" path="res://assets/cadeado.png" id="6_ovee1"]
 [ext_resource type="Texture2D" uid="uid://cssfujjw5yy0c" path="res://assets/telafase/portais.png" id="8_5mfbw"]
+[ext_resource type="PackedScene" uid="uid://dhf1ovhjvn6bu" path="res://cenas/bg_music.tscn" id="9_5mfbw"]
 
 [node name="ChooseLevelScreen" type="Node2D"]
 script = ExtResource("1_haomu")
@@ -210,6 +211,8 @@ texture = ExtResource("6_ovee1")
 position = Vector2(644, 359)
 scale = Vector2(0.306157, 0.2375)
 texture = ExtResource("8_5mfbw")
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("9_5mfbw")]
 
 [connection signal="pressed" from="buttons/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="buttons/Button2" to="." method="_on_button_2_pressed"]

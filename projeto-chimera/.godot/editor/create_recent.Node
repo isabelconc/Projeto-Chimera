@@ -1,3 +1,6 @@
+TextureRect
+Node2D
+AudioStreamPlayer
 ColorRect
 Button
 Label
@@ -5,10 +8,7 @@ VBoxContainer
 HBoxContainer
 Control
 CanvasLayer
-TextureRect
 CollisionShape2D
 Area2D
 Sprite2D
 Node
-RichTextLabel
-Node2D

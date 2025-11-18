@@ -5,11 +5,13 @@ extends Node2D
 @onready var enemy_hp: ProgressBar = $HUD/EnemyHP 
 @onready var player_hp_label: Label = $HUD/PlayerHP/HPText
 @onready var enemy_hp_label: Label = $HUD/EnemyHP/HPText
+@onready var enemy_sfx : AudioStreamPlayer = $AudioStreamPlayer2
 
 var player_max_hp: int = 100
 var player_current_hp: int = player_max_hp
 
 func _ready() -> void: 
+	enemy_sfx.play()
 	player_hp.max_value = player_max_hp
 	player_hp.value = player_current_hp
 	player_hp_label.text = str(player_current_hp, "/", player_max_hp)

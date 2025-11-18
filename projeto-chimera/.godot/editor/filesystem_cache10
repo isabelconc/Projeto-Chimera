@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1763443033
+::res://::1763458224
 btnConfig.png::CompressedTexture2D/CompressedTexture2D::3286078360071288558::1763437340::1763433601::1::::<><><>0<>0<>25a1b47d6376fa5bc22c65e41936a580<>res://.godot/imported/btnConfig.png-66780cbff4522d3faa9cfd519141eb8d.ctex::
 btnCreditos.png::CompressedTexture2D/CompressedTexture2D::7620513239319301329::1763437340::1763433601::1::::<><><>0<>0<>c718e609285e02b158572f43af5f2e7f<>res://.godot/imported/btnCreditos.png-4a2f8420a3cb53f4f2184b2baaeb16e7.ctex::
 btnSair.png::CompressedTexture2D/CompressedTexture2D::6534068939735420572::1763437340::1763433601::1::::<><><>0<>0<>1fc91c326e3ad4cd1e4e356417e0851a<>res://.godot/imported/btnSair.png-406adbc8ef343f7cc79b7ec2fdc644a9.ctex::
@@ -53,7 +53,7 @@ README.md::TextFile/TextFile::-1::1757982427::0::1::::<><><>0<>0<><>::
 ::res://assets/gameover/gameover/::1763433601
 gamevoer.png::CompressedTexture2D/CompressedTexture2D::2117802879212764360::1763403460::1763433508::1::::<><><>0<>0<>c294300cfddccf97172e031da777ac05<>res://.godot/imported/gamevoer.png-735c5f1968ff9fa272afe65f98fafc5e.ctex::
 telagameover.png::CompressedTexture2D/CompressedTexture2D::3073510535746022641::1763403432::1763433508::1::::<><><>0<>0<>79a7cb7a6ceb2218e61606ce2aeb5301<>res://.godot/imported/telagameover.png-579eaf8380139849e3744cc6d162be0d.ctex::
-::res://assets/joguinho-main/::1763425162
+::res://assets/joguinho-main/::1763458224
 chimera logo.png::CompressedTexture2D/CompressedTexture2D::7837603128835279680::1763154584::1763425162::1::::<><><>0<>0<>a83e8a8cf0c3543278b5189d80c5ca74<>res://.godot/imported/chimera logo.png-b55c4f6feda72ad5cc2aea4ead5cb4d5.ctex::
 letraschimera2.jpg::CompressedTexture2D/CompressedTexture2D::5750158270195807920::1763154584::1763425162::1::::<><><>0<>0<>3fd81a6762abb54d53bd8e31948afd3b<>res://.godot/imported/letraschimera2.jpg-93976995f816651a08b4bfb44ee09679.ctex::
 letraschimera.jpg::CompressedTexture2D/CompressedTexture2D::2953055163806653407::1763154584::1763425162::1::::<><><>0<>0<>65d76d03a159892cd9f4625e500eae02<>res://.godot/imported/letraschimera.jpg-f12a7027372c4af52561bdae4a52f19c.ctex::
@@ -142,8 +142,9 @@ telachimera.png::CompressedTexture2D/CompressedTexture2D::5110330551702493894::1
 gamevoer.png::CompressedTexture2D/CompressedTexture2D::202728861721734419::1763403460::1763425165::1::::<><><>0<>0<>b28b1c2e6af2bcfb8495a852356fd919<>res://.godot/imported/gamevoer.png-c85ca5f9b10d2bb47861190b89989dfc.ctex::
 jgrnovamente.png::CompressedTexture2D/CompressedTexture2D::8631156454050739355::1763403448::1763425166::1::::<><><>0<>0<>0d59449023a0ddc24b03499c420bd330<>res://.godot/imported/jgrnovamente.png-7ce3b95cebfdc2f4b687d4961364dcbf.ctex::
 telagameover.png::CompressedTexture2D/CompressedTexture2D::771353181978009467::1763403432::1763425165::1::::<><><>0<>0<>cc6d1790b82abad81050a304408a132b<>res://.godot/imported/telagameover.png-fe7b06b65025d5c7ef5740fcfb3e6ab6.ctex::
-::res://assets/joguinho-main/telasentrefase/telalobo/::1763425166
+::res://assets/joguinho-main/telasentrefase/telalobo/::1763458332
 jgrnovamente.png::CompressedTexture2D/CompressedTexture2D::4695430908002682832::1763402552::1763425166::1::::<><><>0<>0<>649fcf2aed7f6970564dca223971dbe5<>res://.godot/imported/jgrnovamente.png-eab924028976823f30359fbe4827b8c9.ctex::
+lobinhooo.png::CompressedTexture2D::1016951571485315044::1763438395::1763458349::1::::<><><>0<>0<>b0528b6d0fb67a315d39b5c7ce652768<>res://.godot/imported/lobinhooo.png-877db7c0c8f82d3ca4d29b0cb7ff99c7.ctex::
 lobo.png::CompressedTexture2D/CompressedTexture2D::7720232275586881528::1763402518::1763425166::1::::<><><>0<>0<>5ea46e0f41c4d69d233e1e628acc3b6b<>res://.godot/imported/lobo.png-a810ef1f9be0d09dcd696b6ece870f42.ctex::
 proxfase.png::CompressedTexture2D/CompressedTexture2D::4862637077321187621::1763402542::1763425165::1::::<><><>0<>0<>63c47a2d02f6c37a38eb437f9855fcd7<>res://.godot/imported/proxfase.png-b1731bba762fdabf7b5c9cd2b5797649.ctex::
 telalobo.png::CompressedTexture2D/CompressedTexture2D::6025453728244253055::1763402420::1763425165::1::::<><><>0<>0<>c349781dd7da324d4a055aa74aacc651<>res://.godot/imported/telalobo.png-c5050d947b92ad98d67f25613f61ffdb.ctex::
@@ -168,44 +169,45 @@ btnJgrNovamente.png::CompressedTexture2D/CompressedTexture2D::816239427578004891
 btnProxfase.png::CompressedTexture2D/CompressedTexture2D::4769311371365491622::1763351608::1763411307::1::::<><><>0<>0<>ed6cccc79d1d24d1fcf973f72a67796f<>res://.godot/imported/btnProxfase.png-ab4db9721520dff17c5e7ae3e1885e41.ctex::
 faseLoong.png::CompressedTexture2D/CompressedTexture2D::7501912183309517160::1763351508::1763411307::1::::<><><>0<>0<>27e59fde8c699bb54604a4a05f765f28<>res://.godot/imported/faseLoong.png-1662a04e1e5b198d7c7c19acbf377b49.ctex::
 Loong.png::CompressedTexture2D/CompressedTexture2D::42393886222239406::1763351570::1763411307::1::::<><><>0<>0<>9cd2fa2dde3d26e9e4f1b3d4a23c3981<>res://.godot/imported/Loong.png-f46108bb74690c10517a51a43815ff2a.ctex::
-::res://cenas/::1763437802
-CardSlot.tscn::PackedScene/PackedScene::8599113691725586527::1763437762::0::1::::<><><>0<>0<><>::uid://bbtu1js473686::::res://assets/CardSlot.png<>uid://d20wr8tbwsgkp::::res://scripts/CardSlot.gd
-choose_level_screen.tscn::PackedScene/PackedScene::8263117259167399543::1763437762::0::1::::<><><>0<>0<><>::uid://conek8201w0wb::::res://scripts/choose_level_screen.gd<>uid://dxrghnj8mpda1::::res://assets/Naipe_copas.png<>uid://e80kjwf8jr8d::::res://assets/telafase/fundo.png<>uid://cttqvwy1jg1kv::::res://assets/Naipe_paus.png<>uid://b41mf7t8l6x7j::::res://assets/Naipe_ouros.png<>uid://lqnrf1vlveqn::::res://assets/Naipe_espadas.png<>uid://cvv4owk4wbg6p::::res://assets/cadeado.png<>uid://cssfujjw5yy0c::::res://assets/telafase/portais.png
-credits_screen.tscn::PackedScene/PackedScene::2224214344565030250::1763427392::0::1::::<><><>0<>0<><>::uid://dk6gdbvcyuylv::::res://scripts/credits_screen.gd<>uid://ibur3vpqlpm0::::res://assets/creditsscene.jpg
-game_over.tscn::PackedScene/PackedScene::5390980061799630787::1763437762::0::1::::<><><>0<>0<><>::uid://b72c0nq5q83iw::::res://game_over.gd<>uid://5f450bbpccgu::::res://assets/gameover/gameover/gamevoer.png<>uid://5142qrtcvedj::::res://assets/joguinho-main/telasentrefase/chimera/jgrnovamente.png
-inimigo.tscn::PackedScene/PackedScene::7297294847413026338::1763437762::0::1::::<><><>0<>0<><>::uid://b6fig4c7rnlif::::res://scripts/inimigo.gd<>uid://dirx7g37215kp::::res://assets/long.png
+::res://cenas/::1763458224
+bg_music.tscn::PackedScene::7662510602483937994::1763458224::0::1::::<><><>0<>0<><>::uid://cfniwq5s6njq::::res://sounds/Full Speed Ahead (Instrumental) - EPIC_ The Musical.mp3
+CardSlot.tscn::PackedScene/PackedScene::8599113691725586527::1763447102::0::1::::<><><>0<>0<><>::uid://bbtu1js473686::::res://assets/CardSlot.png<>uid://d20wr8tbwsgkp::::res://scripts/CardSlot.gd
+choose_level_screen.tscn::PackedScene/PackedScene::8263117259167399543::1763447103::0::1::::<><><>0<>0<><>::uid://conek8201w0wb::::res://scripts/choose_level_screen.gd<>uid://dxrghnj8mpda1::::res://assets/Naipe_copas.png<>uid://e80kjwf8jr8d::::res://assets/telafase/fundo.png<>uid://cttqvwy1jg1kv::::res://assets/Naipe_paus.png<>uid://b41mf7t8l6x7j::::res://assets/Naipe_ouros.png<>uid://lqnrf1vlveqn::::res://assets/Naipe_espadas.png<>uid://cvv4owk4wbg6p::::res://assets/cadeado.png<>uid://cssfujjw5yy0c::::res://assets/telafase/portais.png<>uid://dhf1ovhjvn6bu::::res://cenas/bg_music.tscn
+credits_screen.tscn::PackedScene/PackedScene::2224214344565030250::1763447103::0::1::::<><><>0<>0<><>::uid://dk6gdbvcyuylv::::res://scripts/credits_screen.gd<>uid://ibur3vpqlpm0::::res://assets/creditsscene.jpg<>uid://dhf1ovhjvn6bu::::res://cenas/bg_music.tscn
+game_over.tscn::PackedScene/PackedScene::5390980061799630787::1763447103::0::1::::<><><>0<>0<><>::uid://b72c0nq5q83iw::::res://game_over.gd<>uid://5f450bbpccgu::::res://assets/gameover/gameover/gamevoer.png<>uid://5142qrtcvedj::::res://assets/joguinho-main/telasentrefase/chimera/jgrnovamente.png
+inimigo.tscn::PackedScene/PackedScene::7297294847413026338::1763447103::0::1::::<><><>0<>0<><>::uid://b6fig4c7rnlif::::res://scripts/inimigo.gd<>uid://dirx7g37215kp::::res://assets/long.png
 ko_screen.gd::GDScript/GDScript::4805137560597207691::1763436531::0::1::::<>Node2D<><>0<>0<><>::
-ko_screen.tscn::PackedScene/PackedScene::7833655280140533531::1763437762::0::1::::<><><>0<>0<><>::uid://capv6cdqyut4f::::res://cenas/ko_screen.gd<>uid://ushruujdqre::::res://assets/telaloong/Loong.png<>uid://doj6paagstghu::::res://assets/telaloong/btnJgrNovamente.png<>uid://b87j4j4wpeg5c::::res://assets/telaloong/btnProxfase.png
-level_four2.tscn::PackedScene/PackedScene::2918745319120460087::1763437762::0::1::::<><><>0<>0<><>::uid://61h62bo2mk45::::res://scripts/level_four.gd<>uid://d0h2j42ug7ac6::::res://assets/joguinho-main/deckmar/deckmar/partetras.jpg<>uid://ukip4jxl4lb1::::res://scripts/hud.gd<>uid://0woxrh7lirv2::::res://scripts/cartas/cardmanager.gd<>uid://durqe77sf7lxv::::res://cenas/CardSlot.tscn<>uid://cmdor63ycrrin::::res://cenas/mao_de_jogo.gd<>uid://bln2jwr2qke8l::::res://assets/deck.gd<>uid://jb2o217gwou1::::res://assets/ETHEREALTAROTCARDS1_1200x.jpg<>uid://n530bqnf2v5d::::res://scripts/input_manager.gd<>uid://db74m6jcw81gg::::res://cenas/inimigo.tscn
+ko_screen.tscn::PackedScene/PackedScene::7833655280140533531::1763447103::0::1::::<><><>0<>0<><>::uid://capv6cdqyut4f::::res://cenas/ko_screen.gd<>uid://ushruujdqre::::res://assets/telaloong/Loong.png<>uid://doj6paagstghu::::res://assets/telaloong/btnJgrNovamente.png<>uid://b87j4j4wpeg5c::::res://assets/telaloong/btnProxfase.png
+level_four2.tscn::PackedScene/PackedScene::2918745319120460087::1763447103::0::1::::<><><>0<>0<><>::uid://61h62bo2mk45::::res://scripts/level_four.gd<>uid://d0h2j42ug7ac6::::res://assets/joguinho-main/deckmar/deckmar/partetras.jpg<>uid://ukip4jxl4lb1::::res://scripts/hud.gd<>uid://0woxrh7lirv2::::res://scripts/cartas/cardmanager.gd<>uid://durqe77sf7lxv::::res://cenas/CardSlot.tscn<>uid://cmdor63ycrrin::::res://cenas/mao_de_jogo.gd<>uid://bln2jwr2qke8l::::res://assets/deck.gd<>uid://jb2o217gwou1::::res://assets/ETHEREALTAROTCARDS1_1200x.jpg<>uid://n530bqnf2v5d::::res://scripts/input_manager.gd<>uid://db74m6jcw81gg::::res://cenas/inimigo.tscn
 level_four.tscn::PackedScene/PackedScene::3009528626840713886::1763436308::0::1::::<><><>0<>0<><>::uid://61h62bo2mk45::::res://scripts/level_four.gd
-level_one.tscn::PackedScene/PackedScene::6708858367209984654::1763437761::0::1::::<><><>0<>0<><>::uid://c6pe4h0ky7cxy::::res://scripts/level_one.gd<>uid://d0h2j42ug7ac6::::res://assets/joguinho-main/deckmar/deckmar/partetras.jpg<>uid://ukip4jxl4lb1::::res://scripts/hud.gd<>uid://0woxrh7lirv2::::res://scripts/cartas/cardmanager.gd<>uid://cmdor63ycrrin::::res://cenas/mao_de_jogo.gd<>uid://durqe77sf7lxv::::res://cenas/CardSlot.tscn<>uid://bln2jwr2qke8l::::res://assets/deck.gd<>uid://jb2o217gwou1::::res://assets/ETHEREALTAROTCARDS1_1200x.jpg<>uid://n530bqnf2v5d::::res://scripts/input_manager.gd<>uid://db74m6jcw81gg::::res://cenas/inimigo.tscn
+level_one.tscn::PackedScene::6708858367209984654::1763458224::0::1::::<><><>0<>0<><>::uid://c6pe4h0ky7cxy::::res://scripts/level_one.gd<>uid://d0h2j42ug7ac6::::res://assets/joguinho-main/deckmar/deckmar/partetras.jpg<>uid://ukip4jxl4lb1::::res://scripts/hud.gd<>uid://0woxrh7lirv2::::res://scripts/cartas/cardmanager.gd<>uid://cmdor63ycrrin::::res://cenas/mao_de_jogo.gd<>uid://durqe77sf7lxv::::res://cenas/CardSlot.tscn<>uid://bln2jwr2qke8l::::res://assets/deck.gd<>uid://jb2o217gwou1::::res://assets/ETHEREALTAROTCARDS1_1200x.jpg<>uid://n530bqnf2v5d::::res://scripts/input_manager.gd<>uid://db74m6jcw81gg::::res://cenas/inimigo.tscn<>uid://cpk3gocgcuyps::::res://sounds/Hollow Knight OST - False Knight [vKDQNGDOdE4].mp3<>uid://c6yxe4mxrnkd0::::res://sounds/dragon-breathing-fire-364475.mp3<>uid://dqlihsrnuib68::::res://sounds/video-game-hit-noise-001-135821.mp3
 level_three.tscn::PackedScene/PackedScene::3004000013950196276::1757982427::0::1::::<><><>0<>0<><>::uid://beeib6epxhqm4::::res://scripts/level_three.gd
 level_two.tscn::PackedScene/PackedScene::1618251539926551188::1757982427::0::1::::<><><>0<>0<><>::uid://dgppxef7n6m3g::::res://scripts/level_two.gd
 mao_de_jogo.gd::GDScript/GDScript::5622182693272072841::1763436532::0::1::::<>Node2D<><>0<>0<><>::
-Quiz.tscn::PackedScene/PackedScene::4744243864581590284::1763437802::0::1::::<><><>0<>0<><>::uid://ciiq6wofl103v::::res://scripts/quiz.gd
-title_screen.tscn::PackedScene/PackedScene::1357695717058592242::1763437761::0::1::::<><><>0<>0<><>::uid://dbw7kmp1htid3::::res://scripts/title_screen.gd<>uid://2hff2brh21pr::::res://assets/joguinho-main/telaInicial/telaInicial/inicial.png<>uid://cqgl1lcrcuvhl::::res://assets/joguinho-main/telaInicial/telaInicial/btnCreditos.png<>uid://dmgoqeb0p4saj::::res://assets/joguinho-main/telaInicial/telaInicial/btnIniciar.png
-::res://cenas/cartas/::1763437763
-carta.tscn::PackedScene/PackedScene::3762116653844652366::1763437762::0::1::::<><><>0<>0<><>::uid://c6ybxqq2fux34::::res://scripts/cartas/carta.gd<>uid://dkf55deru535d::::res://assets/joguinho-main/deckmar/deckmar/2mar.png
-cartaFunc.tscn::PackedScene/PackedScene::6703156694618194164::1763437763::0::1::::<><><>0<>0<><>::uid://c6ybxqq2fux34::::res://scripts/cartas/carta.gd<>uid://dkf55deru535d::::res://assets/joguinho-main/deckmar/deckmar/2mar.png
-carta_1.tscn::PackedScene/PackedScene::5773725297638344296::1763437763::0::1::::<><><>0<>0<><>::uid://c6ybxqq2fux34::::res://scripts/cartas/carta.gd<>uid://bnpneyytespif::::res://assets/cartas/asArit.png
-::res://scripts/::1763437733
+Quiz.tscn::PackedScene/PackedScene::4744243864581590284::1763447103::0::1::::<><><>0<>0<><>::uid://ciiq6wofl103v::::res://scripts/quiz.gd
+title_screen.tscn::PackedScene/PackedScene::1357695717058592242::1763447101::0::1::::<><><>0<>0<><>::uid://dbw7kmp1htid3::::res://scripts/title_screen.gd<>uid://2hff2brh21pr::::res://assets/joguinho-main/telaInicial/telaInicial/inicial.png<>uid://cqgl1lcrcuvhl::::res://assets/joguinho-main/telaInicial/telaInicial/btnCreditos.png<>uid://dmgoqeb0p4saj::::res://assets/joguinho-main/telaInicial/telaInicial/btnIniciar.png<>uid://dhf1ovhjvn6bu::::res://cenas/bg_music.tscn
+::res://cenas/cartas/::1763447103
+carta.tscn::PackedScene/PackedScene::3762116653844652366::1763447103::0::1::::<><><>0<>0<><>::uid://c6ybxqq2fux34::::res://scripts/cartas/carta.gd<>uid://dkf55deru535d::::res://assets/joguinho-main/deckmar/deckmar/2mar.png
+cartaFunc.tscn::PackedScene/PackedScene::6703156694618194164::1763447103::0::1::::<><><>0<>0<><>::uid://c6ybxqq2fux34::::res://scripts/cartas/carta.gd<>uid://dkf55deru535d::::res://assets/joguinho-main/deckmar/deckmar/2mar.png
+carta_1.tscn::PackedScene/PackedScene::5773725297638344296::1763447103::0::1::::<><><>0<>0<><>::uid://c6ybxqq2fux34::::res://scripts/cartas/carta.gd<>uid://bnpneyytespif::::res://assets/cartas/asArit.png
+::res://scripts/::1763458191
 CardDatabase.gd::GDScript/GDScript::6505841329218188186::1763436530::0::1::::<>Node<><>0<>0<><>::
 CardSlot.gd::GDScript/GDScript::9107338168192305611::1763436530::0::1::::CardSlot<>Node2D<><>0<>0<><>::
 choose_level_screen.gd::GDScript/GDScript::5782584591183346049::1763436531::0::1::::<>Node2D<><>0<>0<><>::
 credits_screen.gd::GDScript/GDScript::7925515942261793547::1763436531::0::1::::<>Node2D<><>0<>0<><>::
 hud.gd::GDScript/GDScript::1424934711293211552::1763436531::0::1::::<>CanvasLayer<><>0<>0<><>::
-inimigo.gd::GDScript/GDScript::4573094703691903161::1763436531::0::1::::<>Node2D<><>0<>0<><>::
+inimigo.gd::GDScript/GDScript::4573094703691903161::1763458190::0::1::::<>Node2D<><>0<>0<><>::
 input_manager.gd::GDScript/GDScript::976131098399947163::1763436531::0::1::::<>Node2D<><>0<>0<><>::
 levelcore.gd::GDScript/GDScript::5475422606143428874::1763436532::0::1::::<>Node<><>0<>0<><>::
 level_four.gd::GDScript/GDScript::2230009773292894640::1763437127::0::1::::<>Node2D<><>0<>0<><>::
-level_one.gd::GDScript/GDScript::6979956249241659054::1763436532::0::1::::<>Node2D<><>0<>0<><>::
-level_three.gd::GDScript/GDScript::2675922726113139581::1763436532::0::1::::<>Node2D<><>0<>0<><>::
+level_one.gd::GDScript/GDScript::6979956249241659054::1763458191::0::1::::<>Node2D<><>0<>0<><>::
+level_three.gd::GDScript/GDScript::2675922726113139581::1763458191::0::1::::<>Node2D<><>0<>0<><>::
 level_two.gd::GDScript/GDScript::7612312826659665526::1763436532::0::1::::<>Node2D<><>0<>0<><>::
 quiz.gd::GDScript/GDScript::5351895147402148177::1763437733::0::1::::<>CanvasLayer<><>0<>0<><>::
 title_screen.gd::GDScript/GDScript::7276828661657925930::1763436532::0::1::::<>Control<><>0<>0<><>::
-::res://scripts/cartas/::1763436611
+::res://scripts/cartas/::1763443050
 cardmanager.gd::GDScript/GDScript::1801029417878219225::1763436530::0::1::::<>Node2D<><>0<>0<><>::
-carta.gd::GDScript/GDScript::6998343242839944449::1763436611::0::1::::Card<>Node2D<><>0<>0<><>::
+carta.gd::GDScript/GDScript::6998343242839944449::1763443050::0::1::::Card<>Node2D<><>0<>0<><>::
 ::res://scripts/controllers/::1763437760
 controller.gd::GDScript/GDScript::6825009734552611154::1763437760::0::1::::<>Node<><>0<>0<><>::
 ::res://scripts/models/::1763437628
@@ -213,3 +215,19 @@ BDDArit.gd::GDScript/GDScript::9066194145429693783::1763437604::0::1::::<>Node<>
 BDDFunc.gd::GDScript/GDScript::4894743811420517707::1763437619::0::1::::<>Node<><>0<>0<><>::
 BDDGeo.gd::GDScript/GDScript::4620287337278940118::1763437619::0::1::::<>Node<><>0<>0<><>::
 BDDProb.gd::GDScript/GDScript::750595369604721760::1763437627::0::1::::<>Node<><>0<>0<><>::
+::res://sounds/::1763458225
+card-shuffle-94662.mp3::AudioStreamMP3::5993211742241793603::1763437419::1763458225::1::::<><><>0<>0<>536a72053043df228cbb514e12951afc<>res://.godot/imported/card-shuffle-94662.mp3-5cbdbe3e2e55d78070b53558e04545d6.mp3str::
+chimera-roar-by-djvanbeat-82827.mp3::AudioStreamMP3::6303623061890018604::1763437662::1763458225::1::::<><><>0<>0<>eede2bf0e1232692dd58a92cd42d3859<>res://.godot/imported/chimera-roar-by-djvanbeat-82827.mp3-3d4abad0e5ff8b5a677df4643bf23452.mp3str::
+dragon-breathing-fire-364475.mp3::AudioStreamMP3::6999645763054951167::1763437508::1763458225::1::::<><><>0<>0<>88c5afe9bb701e5ac3dc38f4bd53011a<>res://.godot/imported/dragon-breathing-fire-364475.mp3-80388afbf078bb69b39f95ace6197119.mp3str::
+Duelo Macabro.mp3::AudioStreamMP3::1488040829841271262::1763437999::1763458225::1::::<><><>0<>0<>939760a2801d2919c74ec47ba5380b97<>res://.godot/imported/Duelo Macabro.mp3-fe49e394404d10e68c20f86b11da764f.mp3str::
+flipcard-91468.mp3::AudioStreamMP3::2418186849513488353::1763437405::1763458225::1::::<><><>0<>0<>99f6e590784dace1354327ecd72d1ab5<>res://.godot/imported/flipcard-91468.mp3-0bbd03c6f9d3a1f0c3ff7e64d6309674.mp3str::
+Full Speed Ahead (Instrumental) - EPIC_ The Musical.mp3::AudioStreamMP3::151504364922491214::1763437379::1763458225::1::::<><><>0<>0<>460f3ff7af085434fb39619b1c5d99bd<>res://.godot/imported/Full Speed Ahead (Instrumental) - EPIC_ The Musical.mp3-e1a1f1164f11457fca0ad5f5bd0d0e30.mp3str::
+grumpy-old-man-89761.mp3::AudioStreamMP3::2235272940962306303::1763437610::1763458225::1::::<><><>0<>0<>a619f0adce7066dc0ac51de88d4b3818<>res://.godot/imported/grumpy-old-man-89761.mp3-18760cbfb3a2597a1f5861d48ac279a4.mp3str::
+Hollow Knight OST - False Knight [vKDQNGDOdE4].mp3::AudioStreamMP3::5848029328750786416::1763437885::1763458225::1::::<><><>0<>0<>048c82c6a9b3c03aec4996a9c8a06ada<>res://.godot/imported/Hollow Knight OST - False Knight [vKDQNGDOdE4].mp3-98da426699ac451b6e94b4cbe2d7c753.mp3str::
+impactful-damage-425132.mp3::AudioStreamMP3::9077682201790985290::1763438528::1763458225::1::::<><><>0<>0<>d42f6569887a73ed193562b4901d3212<>res://.godot/imported/impactful-damage-425132.mp3-2f71bc0dcf12248004e26bddc9909b94.mp3str::
+Memoria Timoris.mp3::AudioStreamMP3::1267508319659056237::1763438284::1763458225::1::::<><><>0<>0<>75fc40f5d676e071a018790e2d37da80<>res://.godot/imported/Memoria Timoris.mp3-54da4e7e4f5ec8c8dc1407510a980da8.mp3str::
+Nightcore - dj-Nate - Theory of Everything (Sped Up).mp3::AudioStreamMP3::3019111986596197479::1763438506::1763458225::1::::<><><>0<>0<>128e84ef613dae379269cca64398796c<>res://.godot/imported/Nightcore - dj-Nate - Theory of Everything (Sped Up).mp3-f54796bac9824537c2b6a8a6173fe0d4.mp3str::
+spooky-wizard-laugh-01-253266.mp3::AudioStreamMP3::7252681524597000053::1763437623::1763458225::1::::<><><>0<>0<>4a380bc2c21bf31ce28fcb84bffd37f7<>res://.godot/imported/spooky-wizard-laugh-01-253266.mp3-42566e666d773537cf52359a061eeede.mp3str::
+video-game-hit-noise-001-135821.mp3::AudioStreamMP3::8305490913381626403::1763438578::1763458225::1::::<><><>0<>0<>196d1624c9d2cc8246ca2c281e7cf30e<>res://.godot/imported/video-game-hit-noise-001-135821.mp3-c0a40b6221370072ba15ce0e76fd80f4.mp3str::
+werewolf-howl-437495.mp3::AudioStreamMP3::8610865323928170647::1763437466::1763458225::1::::<><><>0<>0<>653d0a5fa2308264b998bf00dd6fbb27<>res://.godot/imported/werewolf-howl-437495.mp3-55a7134a2547ae19b8a18cb8363a0fc1.mp3str::
+winning-218995.mp3::AudioStreamMP3::3751477230978807682::1763438707::1763458225::1::::<><><>0<>0<>65ca476105f30c748c0735958f5027df<>res://.godot/imported/winning-218995.mp3-7d90b78e83866394b07fbfc21b5bbe14.mp3str::

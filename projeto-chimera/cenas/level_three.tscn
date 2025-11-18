@@ -1,29 +1,127 @@
-[gd_scene load_steps=2 format=3 uid="uid://bi2fpagol5ney"]
+[gd_scene load_steps=15 format=3 uid="uid://bi2fpagol5ney"]
 
 [ext_resource type="Script" uid="uid://beeib6epxhqm4" path="res://scripts/level_three.gd" id="1_7opj7"]
+[ext_resource type="Texture2D" uid="uid://bfkeevegnpk2o" path="res://assets/joguinho-main/deckfunc/partetras.png" id="2_ca6nl"]
+[ext_resource type="Script" uid="uid://ukip4jxl4lb1" path="res://scripts/hud.gd" id="2_nai5w"]
+[ext_resource type="Script" uid="uid://0woxrh7lirv2" path="res://scripts/cartas/cardmanager.gd" id="3_ca6nl"]
+[ext_resource type="PackedScene" uid="uid://durqe77sf7lxv" path="res://cenas/CardSlot.tscn" id="4_sxexj"]
+[ext_resource type="Script" uid="uid://cmdor63ycrrin" path="res://cenas/mao_de_jogo.gd" id="5_n0brg"]
+[ext_resource type="Script" uid="uid://bln2jwr2qke8l" path="res://assets/deck.gd" id="6_8sq18"]
+[ext_resource type="Texture2D" uid="uid://jb2o217gwou1" path="res://assets/ETHEREALTAROTCARDS1_1200x.jpg" id="7_a2isc"]
+[ext_resource type="Script" uid="uid://n530bqnf2v5d" path="res://scripts/input_manager.gd" id="8_fpxik"]
+[ext_resource type="AudioStream" uid="uid://vg22yhgxsnuc" path="res://sounds/Duelo Macabro.mp3" id="9_k4emn"]
+[ext_resource type="AudioStream" uid="uid://duxfxub8hrbb0" path="res://sounds/werewolf-howl-437495.mp3" id="10_u4qa6"]
+[ext_resource type="AudioStream" uid="uid://dqlihsrnuib68" path="res://sounds/video-game-hit-noise-001-135821.mp3" id="11_56lyw"]
+[ext_resource type="PackedScene" uid="uid://cdx1ui4dkom0h" path="res://cenas/inimigo3.tscn" id="12_a7kdu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oxp34"]
+size = Vector2(141, 226)
 
 [node name="level_three" type="Node2D"]
 script = ExtResource("1_7opj7")
 
-[node name="bg" type="ColorRect" parent="."]
-offset_right = 1150.0
-offset_bottom = 647.0
-scale = Vector2(1.11835, 1.11678)
-color = Color(0.823212, 0.823212, 0.823212, 1)
+[node name="bg" type="TextureRect" parent="."]
+offset_right = 12720.0
+offset_bottom = 7120.0
+scale = Vector2(0.1, 0.1)
+size_flags_horizontal = 3
+texture = ExtResource("2_ca6nl")
 
 [node name="Label" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
-offset_right = 1153.0
-offset_bottom = 644.0
+offset_left = -1.0
+offset_top = -159.0
+offset_right = 1152.0
+offset_bottom = 485.0
 scale = Vector2(1.11254, 1.12284)
 text = "FASE 3"
 horizontal_alignment = 1
 
-[node name="teste" type="Button" parent="."]
-offset_left = 286.0
-offset_top = 157.0
-offset_right = 893.0
-offset_bottom = 457.0
-text = "COMPLETAR A FASE"
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("2_nai5w")
 
-[connection signal="pressed" from="teste" to="." method="_on_teste_pressed"]
+[node name="PlayerHP" type="ProgressBar" parent="HUD"]
+offset_left = 1085.0
+offset_top = 641.0
+offset_right = 1258.0
+offset_bottom = 694.0
+max_value = 400.0
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="HPText" type="Label" parent="HUD/PlayerHP"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+metadata/_edit_use_anchors_ = true
+
+[node name="EnemyHP" type="ProgressBar" parent="HUD"]
+offset_left = 1097.0
+offset_top = 30.0
+offset_right = 1260.0
+offset_bottom = 89.0
+max_value = 700.0
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="HPText" type="Label" parent="HUD/EnemyHP"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+metadata/_edit_use_anchors_ = true
+
+[node name="EnemyAttackLabel" type="Label" parent="HUD"]
+offset_left = 823.0
+offset_top = 209.0
+offset_right = 863.0
+offset_bottom = 232.0
+metadata/_edit_use_anchors_ = true
+
+[node name="cardmanager" type="Node2D" parent="."]
+script = ExtResource("3_ca6nl")
+
+[node name="CardSlot" parent="." instance=ExtResource("4_sxexj")]
+position = Vector2(640, 374)
+scale = Vector2(0.518699, 0.534254)
+
+[node name="Mao_de_Jogo" type="Node2D" parent="."]
+script = ExtResource("5_n0brg")
+
+[node name="Deck" type="Node2D" parent="."]
+position = Vector2(-153, 284)
+scale = Vector2(0.6, 0.6)
+script = ExtResource("6_8sq18")
+
+[node name="Sprite2D" type="Sprite2D" parent="Deck"]
+position = Vector2(445, 446.667)
+scale = Vector2(0.222133, 0.209324)
+texture = ExtResource("7_a2isc")
+
+[node name="Area2D" type="Area2D" parent="Deck"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deck/Area2D"]
+visible = false
+position = Vector2(431.5, 464)
+shape = SubResource("RectangleShape2D_oxp34")
+
+[node name="InputManager" type="Node2D" parent="."]
+script = ExtResource("8_fpxik")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_k4emn")
+autoplay = true
+playback_type = 1
+parameters/looping = false
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_u4qa6")
+parameters/looping = false
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_56lyw")
+
+[node name="Inimigo" parent="." instance=ExtResource("12_a7kdu")]
+position = Vector2(634, 157)
+scale = Vector2(0.2, 0.2)

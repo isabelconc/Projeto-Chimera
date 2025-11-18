@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpk3gocgcuyps"
+path="res://.godot/imported/Hollow Knight OST - False Knight [vKDQNGDOdE4].mp3-98da426699ac451b6e94b4cbe2d7c753.mp3str"
+
+[deps]
+
+source_file="res://sounds/Hollow Knight OST - False Knight [vKDQNGDOdE4].mp3"
+dest_files=["res://.godot/imported/Hollow Knight OST - False Knight [vKDQNGDOdE4].mp3-98da426699ac451b6e94b4cbe2d7c753.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

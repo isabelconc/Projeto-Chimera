@@ -11,3 +11,8 @@ res://cenas/level_four2.tscn
 res://cenas/cartas/carta_1.tscn
 res://cenas/cartas/cartaFunc.tscn
 res://cenas/Quiz.tscn
+res://scripts/level_one.gd
+res://cenas/credits_screen.tscn
+res://scripts/inimigo.gd
+res://scripts/level_three.gd
+res://cenas/level_three.tscn

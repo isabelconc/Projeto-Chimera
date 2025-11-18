@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://db74m6jcw81gg"]
 
 [ext_resource type="Script" uid="uid://b6fig4c7rnlif" path="res://scripts/inimigo.gd" id="1_1nma5"]
-[ext_resource type="Texture2D" uid="uid://dirx7g37215kp" path="res://assets/long.png" id="2_l8wry"]
+[ext_resource type="Texture2D" uid="uid://oqvbqvwx232w" path="res://assets/joguinho-main/telasentrefase/telalobo/lobinhooo.png" id="2_l8wry"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1nma5"]
 
@@ -9,6 +9,7 @@
 script = ExtResource("1_1nma5")
 
 [node name="Inimigo1" type="Sprite2D" parent="."]
+scale = Vector2(1.2, 1.2)
 texture = ExtResource("2_l8wry")
 
 [node name="Area2D" type="Area2D" parent="."]

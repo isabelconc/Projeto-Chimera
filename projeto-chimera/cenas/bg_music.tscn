@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhf1ovhjvn6bu"]
+
+[ext_resource type="AudioStream" uid="uid://cfniwq5s6njq" path="res://sounds/Full Speed Ahead (Instrumental) - EPIC_ The Musical.mp3" id="1_fny43"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_fny43")
+volume_db = -5.0
+pitch_scale = 1.1
+autoplay = true
+playback_type = 1
+parameters/looping = false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfniwq5s6njq"
+path="res://.godot/imported/Full Speed Ahead (Instrumental) - EPIC_ The Musical.mp3-e1a1f1164f11457fca0ad5f5bd0d0e30.mp3str"
+
+[deps]
+
+source_file="res://sounds/Full Speed Ahead (Instrumental) - EPIC_ The Musical.mp3"
+dest_files=["res://.godot/imported/Full Speed Ahead (Instrumental) - EPIC_ The Musical.mp3-e1a1f1164f11457fca0ad5f5bd0d0e30.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

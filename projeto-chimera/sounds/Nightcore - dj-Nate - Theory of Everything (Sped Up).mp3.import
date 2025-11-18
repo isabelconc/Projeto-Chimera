@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjaqllk4p07ap"
+path="res://.godot/imported/Nightcore - dj-Nate - Theory of Everything (Sped Up).mp3-f54796bac9824537c2b6a8a6173fe0d4.mp3str"
+
+[deps]
+
+source_file="res://sounds/Nightcore - dj-Nate - Theory of Everything (Sped Up).mp3"
+dest_files=["res://.godot/imported/Nightcore - dj-Nate - Theory of Everything (Sped Up).mp3-f54796bac9824537c2b6a8a6173fe0d4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://6xoqq871pxfm"]
+[gd_scene load_steps=4 format=3 uid="uid://6xoqq871pxfm"]
 
 [ext_resource type="Script" uid="uid://dk6gdbvcyuylv" path="res://scripts/credits_screen.gd" id="1_8wl6p"]
 [ext_resource type="Texture2D" uid="uid://ibur3vpqlpm0" path="res://assets/creditsscene.jpg" id="2_ti53i"]
+[ext_resource type="PackedScene" uid="uid://dhf1ovhjvn6bu" path="res://cenas/bg_music.tscn" id="3_keyfp"]
 
 [node name="credits_screen" type="Node2D"]
 script = ExtResource("1_8wl6p")
@@ -20,5 +21,7 @@ offset_bottom = 666.0
 scale = Vector2(2.13822, 2.11079)
 text = "VOLTAR"
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("3_keyfp")]
 
 [connection signal="pressed" from="voltar_btn2" to="." method="_on_voltar_btn_2_pressed"]

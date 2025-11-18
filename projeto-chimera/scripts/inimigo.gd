@@ -28,6 +28,7 @@ func die():
 
 
 func take_damage(amount):
+	
 	if not alive:
 		print("Inimigo já está morto, não toma dano")
 		return false

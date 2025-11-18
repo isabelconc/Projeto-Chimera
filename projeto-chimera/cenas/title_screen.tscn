@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://tlxbx6b6x01s"]
+[gd_scene load_steps=9 format=3 uid="uid://tlxbx6b6x01s"]
 
 [ext_resource type="Script" uid="uid://dbw7kmp1htid3" path="res://scripts/title_screen.gd" id="1_26sga"]
 [ext_resource type="Texture2D" uid="uid://2hff2brh21pr" path="res://assets/joguinho-main/telaInicial/telaInicial/inicial.png" id="2_igknf"]
 [ext_resource type="Texture2D" uid="uid://cqgl1lcrcuvhl" path="res://assets/joguinho-main/telaInicial/telaInicial/btnCreditos.png" id="3_26sga"]
 [ext_resource type="Texture2D" uid="uid://dmgoqeb0p4saj" path="res://assets/joguinho-main/telaInicial/telaInicial/btnIniciar.png" id="4_26sga"]
+[ext_resource type="PackedScene" uid="uid://dhf1ovhjvn6bu" path="res://cenas/bg_music.tscn" id="5_7vlxm"]
 
 [sub_resource type="Animation" id="Animation_hafda"]
 length = 0.001
@@ -145,6 +146,8 @@ offset_top = 301.0
 offset_right = 271.0
 offset_bottom = 332.0
 text = "SAIR DO JOGO"
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("5_7vlxm")]
 
 [connection signal="pressed" from="creditos_btn" to="." method="_on_creditos_btn_pressed"]
 [connection signal="pressed" from="comecar_btn" to="." method="_on_comecar_btn_pressed"]
