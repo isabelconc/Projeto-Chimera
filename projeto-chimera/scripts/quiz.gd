@@ -13,8 +13,8 @@ var auxiliar
 var resposta 
 var botoes = []
 var respostas=[]
-var tema: int = 3
-#0 Geometria_ 1 Função _ 2 Probabilidade
+var tema: int = 0
+#0 Geometria_ 1 Função _ 2 Probabilidade 3_ aritimetica
 var pontos= 0
 
 func _ready() -> void:

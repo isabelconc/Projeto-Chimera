@@ -1,5 +1,5 @@
-extends Node2D 
-class_name CardSlot 
+extends Node2D
+class_name CardSlot
 var current_card = null 
 var previous_card = null 
 var card_placed = false 

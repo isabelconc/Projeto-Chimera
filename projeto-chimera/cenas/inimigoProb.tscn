@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3mytlcqdofv5"]
+
+[ext_resource type="Script" uid="uid://bocawxhq33lib" path="res://cenas/inimigo_prob.gd" id="1_hcfcn"]
+[ext_resource type="Texture2D" uid="uid://g8nwp8hv1gyx" path="res://assets/joguinho-main/telasentrefase/chimera/chimera.png" id="2_hcfcn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hcfcn"]
+size = Vector2(224, 156)
+
+[node name="InimigoProb" type="Node2D"]
+script = ExtResource("1_hcfcn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(611, 171)
+scale = Vector2(0.168436, 0.136227)
+texture = ExtResource("2_hcfcn")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2(-14, 56)
+shape = SubResource("RectangleShape2D_hcfcn")

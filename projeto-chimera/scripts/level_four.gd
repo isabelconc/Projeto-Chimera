@@ -1,13 +1,13 @@
 extends Node2D
 
-@onready var enemy: Node2D = $Inimigo
+@onready var enemy: Node2D = $InimigoProb
 @onready var player_hp: ProgressBar = $HUD/PlayerHP 
 @onready var enemy_hp: ProgressBar = $HUD/EnemyHP 
 @onready var player_hp_label: Label = $HUD/PlayerHP/HPText
 @onready var enemy_hp_label: Label = $HUD/EnemyHP/HPText
-
 var player_max_hp: int = 100
 var player_current_hp: int = player_max_hp
+
 
 func _ready() -> void: 
 	player_hp.max_value = player_max_hp
@@ -16,7 +16,6 @@ func _ready() -> void:
 	enemy_hp.max_value = enemy.max_hp
 	enemy_hp.value = enemy.current_hp
 	enemy_hp_label.text = str(enemy.current_hp, "/", enemy.max_hp)
-	
 	enemy.connect("enemy_attacked", Callable(self, "_on_enemy_attacked"))
 	enemy.connect("enemy_died", Callable(self, "_on_enemy_died"))
 
@@ -89,7 +88,7 @@ func check_no_moves_left():
 	var hand_empty = $"Mao_de_Jogo".mao_player.size() == 0
 
 	if deck_empty and hand_empty:
-		var enemy = $Inimigo
+		enemy = $InimigoProb
 		if enemy and enemy.alive:
 			game_over()
 
@@ -102,4 +101,4 @@ func game_over():
 
 	get_tree().paused = true
 
-	get_tree().change_scene_to_file("res://cenas/game_over.tscn")
+	get_tree().change_scene_to_file("res://assets/joguinho-main/telasentrefase/chimera/telachimera.png")

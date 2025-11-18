@@ -1,11 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://bht4krf3iv7vf"]
+[gd_scene load_steps=12 format=3 uid="uid://bht4krf3iv7vf"]
 
 [ext_resource type="Script" uid="uid://61h62bo2mk45" path="res://scripts/level_four.gd" id="1_rfxp0"]
+[ext_resource type="Texture2D" uid="uid://d0h2j42ug7ac6" path="res://assets/joguinho-main/deckmar/deckmar/partetras.jpg" id="2_hx8bp"]
 [ext_resource type="Script" uid="uid://ukip4jxl4lb1" path="res://scripts/hud.gd" id="3_bjtx4"]
 [ext_resource type="Script" uid="uid://0woxrh7lirv2" path="res://scripts/cartas/cardmanager.gd" id="4_lguit"]
 [ext_resource type="Script" uid="uid://cmdor63ycrrin" path="res://cenas/mao_de_jogo.gd" id="5_mfd8b"]
-[ext_resource type="Texture2D" uid="uid://iddrwcxdkxn3" path="res://assets/joguinho-main/deckprob/partetras.png" id="6_5ksc2"]
 [ext_resource type="Script" uid="uid://bln2jwr2qke8l" path="res://assets/deck.gd" id="6_y00ku"]
+[ext_resource type="Texture2D" uid="uid://jb2o217gwou1" path="res://assets/ETHEREALTAROTCARDS1_1200x.jpg" id="7_td1gk"]
 [ext_resource type="Script" uid="uid://n530bqnf2v5d" path="res://scripts/input_manager.gd" id="8_fh8ya"]
 [ext_resource type="PackedScene" uid="uid://c3mytlcqdofv5" path="res://cenas/inimigoProb.tscn" id="9_0ttvt"]
 [ext_resource type="PackedScene" uid="uid://dqt7bipyi2xn4" path="res://cenas/CardSlotProb.tscn" id="10_uov2g"]
@@ -16,20 +17,15 @@ size = Vector2(141, 226)
 [node name="level_four" type="Node2D"]
 script = ExtResource("1_rfxp0")
 
-[node name="bg2" type="ColorRect" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1.0
-offset_top = 722.0
-offset_right = 2526.0
-offset_bottom = 4228.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="bg" type="TextureRect" parent="."]
+offset_left = -4.0
+offset_top = 710.0
+offset_right = 2476.0
+offset_bottom = 4218.0
 rotation = -1.56979
 scale = Vector2(0.285375, 0.364472)
 mouse_filter = 2
-color = Color(0.709804, 0.615686, 0.470588, 1)
+texture = ExtResource("2_hx8bp")
 
 [node name="HUD" type="CanvasLayer" parent="."]
 script = ExtResource("3_bjtx4")
@@ -77,9 +73,9 @@ scale = Vector2(0.6, 0.6)
 script = ExtResource("6_y00ku")
 
 [node name="Sprite2D" type="Sprite2D" parent="Deck"]
-position = Vector2(431.667, 464.167)
-scale = Vector2(0.0564516, 0.0641391)
-texture = ExtResource("6_5ksc2")
+position = Vector2(445, 446.667)
+scale = Vector2(0.222133, 0.209324)
+texture = ExtResource("7_td1gk")
 
 [node name="Area2D" type="Area2D" parent="Deck"]
 collision_layer = 4
@@ -94,14 +90,12 @@ shape = SubResource("RectangleShape2D_05ypx")
 script = ExtResource("8_fh8ya")
 
 [node name="InimigoProb" parent="." instance=ExtResource("9_0ttvt")]
-position = Vector2(-75, -69)
-scale = Vector2(1.1, 1.1)
+position = Vector2(25, -38)
 
 [node name="CardSlotProb" parent="." instance=ExtResource("10_uov2g")]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(317, 339)
-scale = Vector2(0.9, 0.9)
+position = Vector2(657, 399)
 
 [node name="ataque" type="Button" parent="."]
 offset_left = 929.0
